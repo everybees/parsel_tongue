@@ -1,0 +1,1 @@
+print("plenty of dollar")
