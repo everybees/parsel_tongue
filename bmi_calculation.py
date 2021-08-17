@@ -1,11 +1,5 @@
-weight = input("Enter your weight in pounds:")
-height = input("Enter your height in inche:")
+def BMI(weight,height):
+	print("Enter weight in kilograms and height in meters")
+	return weight / height**2
 
-weight_int = int(weight)
-height_int = int(height)
-
-weight_double = weight_per_pounds = 0.453592
-height_double = height_per_meter = 0.0254
-
-bmi = weight_double / height_double * height_double
-print("BMI is:", bmi)
+print(BMI(64,1.82))
