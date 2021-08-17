@@ -1,1 +1,0 @@
-print("jerry wise")
