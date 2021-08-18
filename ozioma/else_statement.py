@@ -13,7 +13,7 @@ def leap_year_calculator():
         print("Ordinary")
 
 
-# leap_year_calculator()
+leap_year_calculator()
 
 
 # write two numbers
