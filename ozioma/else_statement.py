@@ -13,7 +13,7 @@ def leap_year_calculator():
         print("Ordinary")
 
 
-#leap_year_calculator()
+# leap_year_calculator()
 
 
 # write two numbers
@@ -30,5 +30,6 @@ def number_size_checker():
     else:
         print(first_number)
         print(second_number)
+
 
 number_size_checker()
