@@ -1,1 +1,0 @@
-print("Semicolon's Cohort Eight Natives are all mad")
