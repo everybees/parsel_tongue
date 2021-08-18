@@ -15,5 +15,3 @@ def army_classifier():
 		print("No army")
 		
 army_classifier()
-
-def 
