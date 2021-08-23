@@ -7,3 +7,5 @@ third_number = int(input("Enter third number: "))
 # else:
 #     print(False)
 print(first_number < second_number < third_number)
+
+

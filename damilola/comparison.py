@@ -1,6 +1,6 @@
+set_number = 6557
 first_number = int(input("Enter first number: "))
 second_number = int(input("Enter second number: "))
-third_number = int(input("Enter third number: "))
+product = first_number * second_number
 
-
-print(first_number < second_number < third_number)
+if product ==
