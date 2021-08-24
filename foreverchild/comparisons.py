@@ -1,14 +1,3 @@
-print("Foreverchild")
-# solution using none casting method
-promt = input("Enter a Number")
-number_one = input(" ")
-promt = input("Enter a second number")
-second_number = input(" ")
-prompt = input("Enter third Number")
-third_number = input(" ")
-
-compare = print(number_one < second_number and second_number< third_number)
-
 # solution using casted methed
 
 first_number = int(input())
