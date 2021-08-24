@@ -3,8 +3,8 @@ def vowel():
 	string = input("Enter your string: ").lower()
 	number = 0
 	
-	for alphabet in vowels:
-		if alphabet in string:
+	for letter in string:
+		if letter in vowels:
 			number += 1
 	print(number)
 	
