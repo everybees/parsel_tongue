@@ -1,4 +1,4 @@
-number = int(input("enter any integer value: "))
+number = float(input("enter any integer value: "))
 
 if number < 0:
     print("negative")
