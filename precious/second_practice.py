@@ -8,7 +8,7 @@ print(radius_int)
 
 pi = 3.14
 
-area = pi * radius * radius
+area = pi * radius**2
 print(area)
 
 circumference = 2 * pi * radius
