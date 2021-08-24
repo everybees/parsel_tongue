@@ -13,9 +13,9 @@ if a < b:
     h = int(input())
     if h < a:
         print('Deficiency!')
-    if h > b:
+    elif h > b:
         print('Excess!')
-    if a < h < b:
+    elif a < h < b:
         print('Normal!')
 else:
     print('Inputs are not valid')
