@@ -1,14 +1,14 @@
-no_of_army = int(input())
+category = int(input())
 
-if no_of_army < 1:
+if category < 1:
     print("no army")
-elif no_of_army >= 1 and no_of_army <= 9:
+elif 1 <= category & category <= 9:
     print("few")
-elif no_of_army >= 10 and no_of_army <=49:
+elif 10 <= category & category <= 49:
     print("pack")
-elif no_of_army >= 50 and no_of_army <= 499:
+elif 50 <= category & category <= 490:
     print("horde")
-elif no_of_army >= 500 and no_of_army <=999:
+elif 500 <= category & category <= 999:
     print("swarm")
 else:
-    print("legion")    
+    print("legion")
