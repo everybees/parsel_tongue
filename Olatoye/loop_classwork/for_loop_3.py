@@ -5,3 +5,4 @@ def pattern_printer():
 		print(number)
 		
 pattern_printer()
+

@@ -1,4 +1,5 @@
 def read_aloud():
+	numbers = ["zero", "one", "two", "three", "four", "four", "five", "six", "seven", "eight", "nine"]
 	phone_number = input("Enter your phone number: ")
 	
 	try:
@@ -7,7 +8,8 @@ def read_aloud():
 		print("Enter digits only")
 		read_aloud()
 	
-	for number in phone_number:
-		print(number)
+	for digit in phone_number:	
+		print(numbers[int(digit)])
 		
 read_aloud()
+
