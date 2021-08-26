@@ -5,4 +5,3 @@ for vowel in string:
         vowels = vowels + 1
 print("total number of vowels are ")
 print(vowels)
-
