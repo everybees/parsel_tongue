@@ -6,11 +6,12 @@ public class Dog {
     private String colour;
     private String sex;
     private String type;
-    CatConstructor cat = new CatConstructor("lime", "shole", "male");
-    private String catName = cat.getName();
+
+    //private String catName = cat.getName();
 
     public void move() {
-        System.out.print(name + " and "+catName+" love moving around");
+        CatConstructor cat = new CatConstructor("lime", "shole", "male");
+        System.out.print(name + " and "+cat.getName()+" love moving around");
     }
     public void bark() {
        // move();

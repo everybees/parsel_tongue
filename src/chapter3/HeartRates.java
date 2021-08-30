@@ -1,6 +1,7 @@
 package chapter3;
 
 import java.time.LocalDate;
+import java.util.Scanner;
 
 public class HeartRates {
     private String firstName;
@@ -41,18 +42,32 @@ public class HeartRates {
         return LocalDate.now().getYear() - displayDay.getYear();
     }
     public int calculateTheMaximumHeartRate(){
-        return 220 - displayDay.getYear();
+        return 220 - calculateAgeInYears();
     }
     public String calculateTheTargetHeartRate() {
-        double fifthyPercentMaxHeartRate = 50 / 100 * calculateTheMaximumHeartRate();
-        double eightyPercentMaxHeartRate = 80 / 100 * calculateTheMaximumHeartRate();
+        double fifthyPercentMaxHeartRate = (50.0 / 100) * calculateTheMaximumHeartRate();
+        double eightyPercentMaxHeartRate = 80.0 / 100 * calculateTheMaximumHeartRate();
         return fifthyPercentMaxHeartRate + "-" + eightyPercentMaxHeartRate;
     }
 
     public static void main(String[] args) {
-        HeartRates heart = new HeartRates("Angola", "Bello", 03, 20, 1888);
-
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("Enter your first name: ");
+//        String firstName = input.nextLine();
+//        System.out.println("Enter your last name: ");
+//        String lastName = input.nextLine();
+//        System.out.println("Enter your month");
+//        int month = input.nextInt();
+//        System.out.println("Enter your day");
+//        int day = input.nextInt();
+//        System.out.println("Enter your year");
+//        int year = input.nextInt();
+//
+//        HeartRates heart = new HeartRates(firstName, lastName, month, day, year);
+        HeartRates heart = new HeartRates("Buki", "Jonah", 12, 31, 1993);
+        System.out.println("Your age in year is: " + heart.calculateAgeInYears());
         System.out.println(heart.calculateTheMaximumHeartRate());
+        System.out.println(heart.calculateTheTargetHeartRate());
 
     }
 }
