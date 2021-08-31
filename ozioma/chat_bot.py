@@ -1,9 +1,6 @@
 import datetime
-
 question = input('Ask a question:  ')  # .split()
 # print(question)
-
-
 if "what" and "time" in question:
     print("The time of the day is:", datetime.datetime.now().time())
     if "your name" in question:
