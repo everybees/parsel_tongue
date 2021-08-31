@@ -9,7 +9,7 @@ while True:
     question = input().split()
     if "time" in question:
         print("the time of the day is: ", datetime.datetime.now().time())
-    elif "name" in question:g
+    elif "name" in question:
         print("my name is Precious, How can i help you?")
     elif "eat" in question or "eaten" in question:
         print("yes, i have eaten.")
