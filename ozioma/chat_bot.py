@@ -17,26 +17,69 @@ while True:
          # "sharwarma": ["You want?", "Yes!", "Ole ni e", "Can we create a time for that?", "Ori e o pe!"],
          "how" and "are you": ["Fine", "Great", "Awwww.", "I need you", "I am fine"]
          }
-    if "smart" in question:
-        print(random.choice(b["smart"]))
-    elif "name" in question:
-        print(random.choice(b["name"]))
-    elif "money" in question:
-        print(random.choice(b["money"]))
-    elif "food" in question:
-        print(random.choice(b["food"]))
-    elif "doing" in question:
-        print(random.choice(b["doing"]))
-    elif "shoe" in question:
-        print(random.choice(b["shoe"]))
-    elif "what" and "time" in question:
-        print(random.choice(b["what" and "time"]))
+
+    for word in b:
+        if word in question:
+            print(random.choice(b[word]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    # if "smart" in question:
+    #     print(random.choice(b["smart"]))
+    # elif "name" in question:
+    #     print(random.choice(b["name"]))
+    # elif "money" in question:
+    #     print(random.choice(b["money"]))
+    # elif "food" in question:
+    #     print(random.choice(b["food"]))
+    # elif "doing" in question:
+    #     print(random.choice(b["doing"]))
+    # elif "shoe" in question:
+    #     print(random.choice(b["shoe"]))
+    # elif "what" and "time" in question:
+    #     print(random.choice(b["what" and "time"]))
     # elif "sharwama":
     #     print(random.choice(b["sharwarma"]))
-    elif ("how" and "you") or "how are you":
-        print(random.choice(b["how" and "are you"]))
-    else:
-        print("Can we say something else?")
+    # elif ("how" and "you") or "how are you":
+    #     print(random.choice(b["how" and "are you"]))
+    # else:
+    #     print("Can we say something else?")
     # # print(question)
     # love = ["Yes, I love you", "No, I don't love you", "What is love?", "Love is wicked"]
     # eat = ["I love food.", "Sapa, nice one"]
@@ -79,3 +122,7 @@ while True:
     #         print("The time of the day is:", datetime.datetime.now().time())
     #     if "no" in response:
     #         print("Wahala ooo")
+
+    # print(b.items())
+    # print(b.keys())
+    # print(b.values())
