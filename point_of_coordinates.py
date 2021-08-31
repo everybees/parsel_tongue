@@ -10,7 +10,7 @@ elif x < 0 and y > 0:
 elif x < 0 and y < 0:
     print("III")
 elif x == 0.0 or y == 0.0:
-    print("one of the coordinates is equal to zero")
+    print("its at the origin")
 elif x > 0 and y < 0:
     print("IV")
 
