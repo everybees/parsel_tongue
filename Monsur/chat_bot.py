@@ -6,7 +6,8 @@ love = ["yes, I love you!", "No, I don't love you!", "nah!", "Love is wicked"]
 age = [number for number in range(18, 50)]
 country = ["France", "UK", "Nigeria"]
 siblings = [number for number in range(1, 6)]
-crazy = ["A lil", "Not at all"]
+crazy = ["A lil", "Not at all", "Sometimes"]
+relationships = ["WOW, even the gods do not know", "Yes, I am single", "It is complicated"]
 
 if "old" in Question or "age" in Question:
     print(random.choice(age))
@@ -23,7 +24,7 @@ elif "time" in Question:
 elif "break" in Question:
     print("Yes of course!")
 
-elif "single" in Question:
+elif "single" in Question or "relationship" in Question:
     print("Nah! I am not")
 
 elif "happy" in Question:
