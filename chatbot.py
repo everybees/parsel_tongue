@@ -46,4 +46,4 @@ while True:
         print("it seems you are no longer interested in the question, "  'boy bye!')
         break
     else:
-        print("I don't understand you, Do you mean 'what is the time of the day?'")
+        print("I don't understand you, Do you mean 'what is the time of the day?    '")
