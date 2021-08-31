@@ -9,4 +9,4 @@ if n % 2 == 0 and n <= 5:
 if n % 2 == 0 and n == 6 or n < 20:
     print("weird")
 if n % 2 == 0 and n > 20:
-    print("not weird")
+    print("not weird =")
