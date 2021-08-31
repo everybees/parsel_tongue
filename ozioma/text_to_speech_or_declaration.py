@@ -8,7 +8,7 @@
 text = ["zero, one, two, three, four, five, six, seven, eight, nine"]
 numbers = ["0123456789"]
 digits = input("Enter number: ")
-for digit in digits:
-    for number in numbers:
-        if digit is number:
+for number in numbers:
+    for digit in digits:
+        if digit in number:
             print(text[number])
