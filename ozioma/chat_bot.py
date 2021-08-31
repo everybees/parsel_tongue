@@ -6,6 +6,10 @@ question = input('Ask a question:  ')  # .split()
 
 if "what" and "time" in question:
     print("The time of the day is:", datetime.datetime.now().time())
+    if "your name" in question:
+        print("My name is Precious!")
+elif "your name" in question:
+    print("My name is Precious!")
 else:
     print("I don't understand you.\nDo you mean What is the time of the day?")
     response = input()
