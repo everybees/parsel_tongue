@@ -5,6 +5,10 @@
 # for digit in number:
 # print(text)
 
-text = "zero, one, two, three, four, five, six, seven, eight, nine"
-number = "0, 1, 2, 3, 4, 5, 6, 7, 8, 9"
+text = ["zero, one, two, three, four, five, six, seven, eight, nine"]
+numbers = ["0123456789"]
 digits = input("Enter number: ")
+for digit in digits:
+    for number in numbers:
+        if digit is number:
+            print(text[number])
