@@ -1,4 +1,4 @@
-print("Adesua")
+print("Adesuwa")
 first_number = int(input("Enter first number: "))
 second_number = int(input("Enetr second number: "))
 if first_number < second_number:
