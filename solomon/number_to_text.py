@@ -1,4 +1,5 @@
 string_number = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"]
 string = "vowel"
-for string in string_number:
-    print(string, string_number)
+digits = input()
+for digit in digits:
+    print(string_number[int(digit)])
