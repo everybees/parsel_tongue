@@ -1,5 +1,2 @@
-a = [1,2,3,4,5]
-b = "1745"
-c = 23
-d = str(2.3)
- if len(6) > 4:
+a =range(6)
+print(type(a))
