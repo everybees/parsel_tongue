@@ -16,7 +16,7 @@ if H_hours < A_hours:
     print("deficiency")
 elif H_hours > B_hours:
     print("excess")
-elif H_hours > A_hours and H_hours < B_hours:
+elif A_hours < H_hours < B_hours:
     print("normal")
 
 # question 3
