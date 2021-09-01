@@ -33,6 +33,6 @@ while True:
     elif "tourist" in question:
         print("Tourist attraction in Nigeria includes Olumo rock, Gurara falls, Ogbunike cave")
     else:
-        print("I don't iunderstand")
+        print("I don't understand")
 
 
