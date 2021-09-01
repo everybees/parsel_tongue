@@ -6,7 +6,7 @@ for n in string:
     if n in vowels: 
         vowel_checker += 1
 
-        print(vowel_checker)
+print(vowel_checker)
 
 
 # for count in range(2):
