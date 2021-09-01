@@ -20,12 +20,12 @@ def chatbot():
 		"sleep" : ["I rarely sleep mehn", "I can't shutdown, I can only have a 10sec power nap daily"]
 		}
 		
-		for key in dictionary:
-			if key in question:		
+		for key in dictionary.keys():
+			if key == question:		
 				print(random.choice(dictionary[key]))
-#			else:
-#				print("\nOgbeni, are you normal?")
-#				break
+			else:
+				print("\nOgbeni, are you normal?")
+				break
 		
 		time.sleep(1)
 		print()
