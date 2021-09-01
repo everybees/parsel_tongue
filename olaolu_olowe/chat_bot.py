@@ -13,7 +13,7 @@ import random
 print("My name  Ade, how may I be of help to you today?")
 
 President = ["The current President of Nigeria is Buhari", "The first President of Nigeria is Nnamdi Azikiwe"]
-Independent  = ["Nigeria gained independence in 1960"]
+Independent = ["Nigeria gained independence in 1960"]
 Food = [" Example of Nigrian food includes, Eba, Fufu and Tuwo"]
 Development = ["Yes, Nigeria is a develop  nation", "Nigeri is not a developed Nations", "Lets aske Ifa"]
 Tourist = ["Tourist attraction in Nigeria includes Olumo rock, Gurara falls, Ogbunike cave"]
