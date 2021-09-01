@@ -7,37 +7,25 @@ def chatbot():
 
 		question = input("What's that your question sef?\n").lower()
 	
-		love = ["Ja, ich liebe dich!", "Nein, ich liebe dich nicht", "Scheiße", "Love is wicked"]
-		age = [num for num in range(1, 100)]
-		eat = ["Yeah, baby!", "Nah 😢"]
-		single = ["I'm single as feck", "It's like I'm in one relationship like that joor"]
-		programs = ["python", "java", "golang", "c#"]
-		country = ["Canada", "the UK", "Kenya", "Latvia"]
-	
-		if "time" in question:
-			print(f"\nThe time is {datetime.datetime.now().time()}")
-		elif "name" in question:
-			print("\nAsk me something else biko")
-		elif "love" in question:
-			print(random.choice(love))
-		elif "age" in question or "old" in question:
-			print(random.choice(age))
-		elif "eat" in question:
-			print(random.choice(eat))
-		elif "single" in question or "relationship" in question:
-			print(random.choice(single))
-		elif "play" in question or "fun" in question:
-			print("It depends, ask no more")
-		elif "code" in question or "program" in question:
-			print("Yeah, I write only " + random.choice(programs) + " tho")
-		elif "travel" in question or "country" in question:
-			print("I've been to " + random.choice(country))
-		elif "sleep" in question or "rest" in question or "shutdown" in question:
-			print("I can't shutdown, I can only have a 10sec power nap daily")
-		elif "ai" in question or "destroy" in question or "end" in question:
-			print("I can only say AI won't be the end of humanity")
-		else:
-			print("\nOgbeni, are you normal?")
+		dictionary = {
+		"time" : ["The time is " + str(datetime.datetime.now().time()) ,"Go buy wristwatch"],
+		"name" : ["Siri", "Sam", "Alexa", "Ask me something else biko"],
+		"love" : ["Ja, ich liebe dich!", "Nein, ich liebe dich nicht", "Scheiße", "Love is wicked"],
+		"eat" : ["Yeah, baby!", "Nah 😢"],
+		"single" : ["I'm single as feck", "It's like I'm in one relationship like that joor"],
+		"programs" : ["I write python sometimes", "I'm learning java", "I can't kill myself on golang", "C# is unnecessarily hard"],
+		"country":  ["I've been to Canada", "Maybe the UK", "Lovely Kenya", "Extremely beautiful Latvia"],
+		"age" : ["I am ",  str(num for num in range(1, 100)), " old"],
+		"play" : ["It depends tho", "Biko leave me alone joor", "Make I daze you?!"],
+		"sleep" : ["I rarely sleep mehn", "I can't shutdown, I can only have a 10sec power nap daily"]
+		}
+		
+		for key in dictionary:
+			if key in question:		
+				print(random.choice(dictionary[key]))
+#			else:
+#				print("\nOgbeni, are you normal?")
+#				break
 		
 		time.sleep(1)
 		print()
