@@ -1,10 +1,12 @@
-A = int(input("minimum hours of sleep: "))
-B = int(input("maximum hours of sleep: "))
-H = int(input("hours of sleep per day: "))
+a_hours_of_sleep_recommended = int(input())
 
 if H < A:
     print("Deficiency")
-elif H > B:
+elif b_hours_of_sleep_required > 8 :
     print("Excess")
+elif h_hours_of_sleep >=8 and h_hours_of_sleep <= 10:
+    print("Normal")  
+elif h_hours_of_sleep > 10:
+     print("Exess")     
 else:
-    print("Normal")
+    print("Deficiency")
