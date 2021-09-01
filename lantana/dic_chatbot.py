@@ -14,17 +14,21 @@ data = {
 }
 while True:
 
-    question = input().split(" ")
-
-    if "bye" in question:
-        print("This is over")
-        break
+    question = input().split()
 
     for q in question:
         if q in data.keys():
             print(random.choice(data[q]))
-            break
-    else:
-        print("I dont understand")
+        else:
+            print("I'm sorry i dont understand this.")
 
-   
+        if "bye" in question:
+            print("This is over")
+            break
+
+        for q in question:
+            if q in data.keys():
+                print(random.choice(data[q]))
+                break
+        else:
+            print("I dont understand")
