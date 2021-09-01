@@ -18,15 +18,16 @@ data = {"love" : ["Yes, I love you", "No, I don't love you", "love is wicked", "
 
 while True:
     question = input().split()
-    
-    for key in data:
-        if key in question:
-            print(random.choice(data[key]))
-        # else:
-        #  print("I don't understand. Ask me something else")
     if "break" in question:
         print("okay,bye!")
         break
+    for key in data:
+        if key in question:
+            print(random.choice(data[key]))
+            break
+    else:
+         print("I don't understand. Ask me something else")
+   
 
 
 
