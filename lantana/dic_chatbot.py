@@ -16,4 +16,6 @@ question = input().split()
 for q in question:
     if q in data.keys():
         print(random.choice(data[q]))
+    else:
+        print("I'm sorry i dont understand this.")
 
