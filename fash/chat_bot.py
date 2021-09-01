@@ -1,9 +1,9 @@
 import random
 import datetime
-question 1: what is the current time
-question 2: how old are you? between 1 and 50
- question 3: do you love me: yes or no
- question 4: have you eaten?
+# question 1: what is the current time
+# question 2: how old are you? between 1 and 50
+#  question 3: do you love me: yes or no
+#  question 4: have you eaten?
 
 
 
