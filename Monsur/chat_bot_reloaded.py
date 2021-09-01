@@ -7,7 +7,13 @@ dictionary = {
     "country": ["France", "UK", "Nigeria"],
     "siblings": [number for number in range(1, 6)],
     "crazy": ["A lil", "Not at all", "Sometimes"],
-    "relationships": ["Wow, even the gods do not know", "Yes, I am single", "It is complicated"]
+    "relationships": ["Wow, even the gods do not know", "Yes, I am single", "It is complicated"],
+    "eat": ["Yes, I have eaten"],
+    "time": ['Time is:", datetime.datetime.now().time()'],
+    "break": ["Yes, of course", "Nah!"],
+    "happy": ["Yes", "No", "Maybe"],
+    "why": ["Never mind!"]
+
     }
 while True:
     user = input("My name is Solibot, how can i help you?: ").split()
