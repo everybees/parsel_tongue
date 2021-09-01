@@ -1,6 +1,10 @@
 a_hours_of_sleep_recommended = int(input())
 
-if H < A:
+b_hours_of_sleep_required = int(input())
+
+h_hours_of_sleep = int(input())
+
+if a_hours_of_sleep_recommended >+ 6 and a_hours_of_sleep_recommended <= 10:
     print("Deficiency")
 elif b_hours_of_sleep_required > 8 :
     print("Excess")
