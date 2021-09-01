@@ -1,5 +1,5 @@
 data = {
-    "name": ["Jibola", "Gbenro", "Idris"],
+    "name": ["jibola", "emmanuel", "adesuwa"],
     "married": ["yes", "no", "maybe"]
 }
 
