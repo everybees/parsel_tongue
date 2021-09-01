@@ -2,7 +2,12 @@ import datetime
 
 import random
 
-# whis the first President of Nigeria
+# who is the first President of Nigeria?
+# Who is the current President of Nigeria?
+# Is Nigeria developed
+# What are the tourist attractions in NIgeria?
+# Give me examples of Nigerian Foods.
+
 
 
 print("My name  Ade, how may I be of help to you today?")
@@ -11,7 +16,7 @@ President = ["The current President of Nigeria is Buhari", "The first President 
 Independent  = ["Nigeria gained independence in 1960"]
 Food = [" Example of Nigrian food includes, Eba, Fufu and Tuwo"]
 Development = ["Yes, Nigeria is a develop  nation", "Nigeri is not a developed Nations", "Lets aske Ifa"]
-Tourist = ["Tourist attraction in Nigeria includes Olumo rock, Gurara falls, Ogbunike cave, for more locations click http://www.travelstart.com.ng/blog/30-top-attractions-in-nigeria/"]
+Tourist = ["Tourist attraction in Nigeria includes Olumo rock, Gurara falls, Ogbunike cave"]
 
 while True:
     question = input()
@@ -25,6 +30,9 @@ while True:
         print("Nigeria gained independence in 1960")
     elif "food" in question:
         print("Example of Nigerian food includes, Eba, Fufu and Tuwo")
-        elif ""
+    elif "tourist" in question:
+        print("Tourist attraction in Nigeria includes Olumo rock, Gurara falls, Ogbunike cave")
+    else:
+        print("I don't iunderstand")
 
 
