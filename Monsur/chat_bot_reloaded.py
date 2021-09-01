@@ -1,3 +1,6 @@
+import random
+import datetime
+
 dictionary = {
     "love":  ["yes, I love you!", "No, I don't love you!", "Nah!", "Love is wicked"],
     "age": ["number for number in range(18, 50)"],
@@ -7,7 +10,7 @@ dictionary = {
     "relationships": ["Wow, even the gods do not know", "Yes, I am single", "It is complicated"]
     }
 while True:
-    user = input()
+    user = input("My name is Solibot, how can i help you?: ").split()
     for keys, value in dictionary.item():
         if user in keys:
             print(random.choice(value))
