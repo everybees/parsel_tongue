@@ -29,6 +29,6 @@ isOnTheCoordinate = firstValue == 0 or secondValue == 0
 
 if firstQuadrantIsTrue: print("I")
 if secondQuadrantIsTrue: print("II")
-if thirdQuadrantIsTrue: print("IiI")
+if thirdQuadrantIsTrue: print("III")
 if fourthQuadrantIsTrue: print("IV")
 if isOnTheCoordinate: print("One of the coordinates is equal to zero.")
