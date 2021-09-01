@@ -26,8 +26,8 @@ def calculator():
 
     counter = 2
     while True:
-        sign = input("Enter sign or 'exit' to leave : ")
-        if sign == "exit":
+        operator_sign = input("Enter sign or 'exit' to leave : ")
+        if operator_sign == "exit":
             print(f"\n\nFinal answer = {num}\nBye!")
             break
         else:
