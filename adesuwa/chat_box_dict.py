@@ -17,3 +17,6 @@ while True:
     for fun in question:
         if fun in furniture.keys():
             print(random.choice(furniture[fun]))
+            break
+    else:
+        print("More ideas are welcome")

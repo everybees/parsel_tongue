@@ -30,6 +30,7 @@ while True:
         print("Im on my own world cloud plans and life")
     elif "job" in question:
         print("In what filed?", random.choice(job))
+        break
     else:
         print("Look for a plan B")
         
