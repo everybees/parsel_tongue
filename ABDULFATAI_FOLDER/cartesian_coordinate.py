@@ -6,7 +6,7 @@ if x == 0 and y == 0:
 elif y == 0:
     print(f"({x}, {y}) is on the x-axis")
 elif x == 0:
-    print(f" ({x},{y}) is on the y-aixs") 
+    print(f" ({x},{y}) is on the y-aixs")
 elif y > 0:
     if x > 0:
         print(f"({x},{y}) is in the first quadrant")
