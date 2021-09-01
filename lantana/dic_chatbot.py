@@ -25,6 +25,6 @@ while True:
             print(random.choice(data[q]))
             break
     else:
-        print("i dont understand")
+        print("I dont understand")
 
    
