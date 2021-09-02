@@ -3,4 +3,4 @@ numbers = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight
 digits = input()
 
 for digit in digits:
-    print(digit, ":", numbers[int(digit)], end="== ")
+    print(digit, ":", numbers[int(digit)])
