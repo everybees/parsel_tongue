@@ -25,6 +25,6 @@ if sign in ops.keys():
             break
         number = float(input())
         if sign in ops.keys():
-            answer = ops[sign](number, answer)
+            answer = ops[sign](answer, number)
             print(answer)
 
