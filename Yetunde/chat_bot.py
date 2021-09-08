@@ -5,6 +5,7 @@ import datetime
 import random
 
 print("This is presh. How may I help you?")
+print("Type exit to quit.")
 
 data = {"love" : ["Yes, I love you", "No, I don't love you", "love is wicked", "What is love"],
     "age": [num for num in range(1, 100)],
@@ -18,13 +19,17 @@ data = {"love" : ["Yes, I love you", "No, I don't love you", "love is wicked", "
 
 while True:
     question = input().split()
-    if "break" in question:
+    if ["exit"] == question:
         print("okay,bye!")
         break
+    options = []
+
     for key in data:
         if key in question:
-            print(random.choice(data[key]))
-            break
+            options.append(random.choice(data[key]))
+    if options:
+        print(random.choice(options))
+            
     else:
          print("I don't understand. Ask me something else")
    
