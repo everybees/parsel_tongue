@@ -11,4 +11,6 @@ elif H > B:
     print("Excess")
 elif H <= A >= B:
     print("Normal")
+else:
+    print("Rest")
     
