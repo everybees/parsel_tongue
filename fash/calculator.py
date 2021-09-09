@@ -25,7 +25,7 @@ if sign in signs.keys():
             break
         new_number =float(input("input the next number"))
         answer = signs[sign](answer, new_number)
-        print(a9nswer)
+        print(answer)
 
 
 
