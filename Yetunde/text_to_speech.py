@@ -1,4 +1,4 @@
-numbers = ["zero", "one", "two", "three", "five", "four", "six", "seven", "eight", "nine"]
+numbers = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 
 digits = input()
 
