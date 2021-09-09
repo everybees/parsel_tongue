@@ -1,6 +1,6 @@
 import operator
 
-operation = {
+operator = {
     "+": operator.add,
     "-": operator.sub,
     "*": operator.mul,
@@ -8,25 +8,23 @@ operation = {
     "%": operator.mod,
     "=": operator.eq
 }
-# while True:
 
 
 first_input = float(input("Enter a number: "))
-operator = input("Enter operator: ")
+operator = input("Enter operator sign: ")
 second_input = float(input("Enter another number: "))
 
 
 
-if operator in operation.keys():
-    answer = operation[operator](first_input, second_input)
+if operator in operator.keys():
+    answer = operator[operator](first_input, second_input)
 print(answer)
 while True:
 
-    if["="] == operation:
-        print("Computing...")
+    if["="] == operator:
         print(answer)
         break
 operator = input("Enter operator: ")
-another_number = float(input("Enter more numbers: "))
-answer = operation[operator](answer, another_number)
+another_number = float(input("Enter another numbers: "))
+answer = operator[operator](answer, another_number)
 print(answer)
