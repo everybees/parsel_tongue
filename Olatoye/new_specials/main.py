@@ -17,4 +17,5 @@ if __name__ == "__main__":
     # exercise.upper_and_lower("OlaToye")
     # exercise.unique_list_item((1, 1, 3, 4, 5, 2, 1, 2))
     # exercise.prime_number(5)
-    exercise.even_number_from((1,2,3,4,5,6))
+    # exercise.even_number_from((1,2,3,4,5,6))
+    
