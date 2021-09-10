@@ -12,9 +12,9 @@ def sum_of_numbers(list_):
 
 
 # Question 3
-def multiple_of_numbers(list):
+def multiple_of_numbers(list_):
     multiple = 1
-    for i in list:
+    for i in list_:
         multiple *= i
     print(multiple)
 
@@ -43,3 +43,12 @@ def upper_and_lower(string_):
         else:
             caps += 1
     print(f"Uppercase: {caps}\nLowercase: {lows}")
+
+
+# Question 8
+def unique_list_item(list_):
+    unique_list = []
+    for i in list_:
+        if i not in unique_list:
+            unique_list.append(i)
+    print(sorted(unique_list))
