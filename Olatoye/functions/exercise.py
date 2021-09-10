@@ -61,3 +61,9 @@ def prime_number(num):
         if num % i == 0:
             divisors.append(i)
     print(f"{num} is a Prime number" if len(divisors) == 1 else f"{num} is not a Prime number")
+
+
+# Question 10
+def even_number_from(list):
+    for i in list:
+        print(i if i % 2 == 0 else "", end=" ")
