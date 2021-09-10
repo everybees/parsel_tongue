@@ -1,5 +1,6 @@
 import datetime
-import time, random
+import random
+import time
 
 
 def chatbot():
