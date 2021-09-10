@@ -112,3 +112,8 @@ def find_prime_number():
                     return answer_false
                 else:
                     return answer_true
+
+
+def print_even_number_from_a_list():
+    input_value = input('Enter a list of numbers separated by space: ').split()
+    return [int(even_number) for even_number in input_value if int(even_number) % 2 == 0]
