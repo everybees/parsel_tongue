@@ -1,4 +1,7 @@
 # Question 1
+import math
+
+
 def max_of_three_numbers(a, b, c):
     print(max(a, b, c))
 
@@ -19,3 +22,8 @@ def multiple_of_numbers(list):
 # Question 4
 def reverse_string(word):
     print(word[::-1])
+
+
+# Question 5
+def factorial(num):
+    print(math.factorial(num))
