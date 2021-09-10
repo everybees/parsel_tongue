@@ -17,16 +17,6 @@ def add_values():
     for value in values:
         total += int(value)
     return total
-    pass
-
-
-def define_list():
-    numbers = []
-    no_of_elements_in_list = int(input('How many elements are in your list? '))
-    for number in range(no_of_elements_in_list):
-        number = int(input('Type no: '))
-        numbers.append(number)
-    return numbers
 
 
 def sum_of_numbers_in_a_list():
