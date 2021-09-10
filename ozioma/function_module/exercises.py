@@ -101,6 +101,7 @@ def find_prime_number():
     for number in range(2, (user_number+1)):
 
         if user_number > 1:
+            Emmanuel / elif_statement.py, Emmanuel / sleep_schedule.py
 
             if user_number % 2 == 0 or user_number == 9:
                 return answer_false
