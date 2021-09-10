@@ -27,3 +27,10 @@ def reverse_string(word):
 # Question 5
 def factorial(num):
     print(math.factorial(num))
+
+
+# Question 6
+def number_in_range(num, lower_lim, upper_lim):
+    print(True if num in range(lower_lim, upper_lim + 1) else False)
+
+
