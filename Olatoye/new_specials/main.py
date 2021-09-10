@@ -8,8 +8,6 @@ if __name__ == "__main__":
     # elif userInput == 2:
     #     chatbot.chatbot()
 
-# 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
-
     # exercise.max_of_three_numbers(4,2,3)
     # exercise.sum_of_numbers((1,2,2))
     # exercise.multiple_of_numbers((1,2,2))
