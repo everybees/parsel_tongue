@@ -3,7 +3,7 @@ from ozioma.function_module import exercises
 
 if __name__ == "__main__":
     # print(exercises.print_even_number_from_a_list())
-     print(exercises.find_prime_number())
+    print(exercises.find_prime_number())
     # print(exercises.reverse_a_string())
     # print(exercises.factorial_of_a_number())
     # print(exercises.max_of_three_numbers())

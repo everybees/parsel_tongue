@@ -97,15 +97,18 @@ def find_prime_number():
     user_number = int(input('Enter number: '))
     answer_true = 'Prime number'
     answer_false = 'Not prime number'
+    value = 'invalid input'
     for number in range(2, (user_number+1)):
+
         if user_number > 1:
-            if user_number % 2 == 0:
+
+            if user_number % 2 == 0 or user_number == 9:
                 return answer_false
+
             elif user_number % 2 != 0:
                 list_of = [number for number in range(2, (user_number+1)) if user_number % number == 0]
+
                 if len(list_of) > 2:
                     return answer_false
                 else:
                     return answer_true
-        else:
-            print('invalid input')
