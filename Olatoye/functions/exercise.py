@@ -34,3 +34,12 @@ def number_in_range(num, lower_lim, upper_lim):
     print(True if num in range(lower_lim, upper_lim + 1) else False)
 
 
+# Question 7
+def upper_and_lower(string_):
+    caps, lows = 0, 0
+    for i in string_:
+        if i.islower():
+            lows += 1
+        else:
+            caps += 1
+    print(f"Uppercase: {caps}\nLowercase: {lows}")
