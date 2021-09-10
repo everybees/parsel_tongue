@@ -48,3 +48,14 @@ def factorial_of_a_number():
         factorial *= input_value
         input_value -= 1
     return factorial
+
+
+def check_number_within_a_range():
+    desired_range = input('What is the desired range? ').split()
+    answer_false = 'Not in range!'
+    answer_true = 'In range!'
+    number = int(input('What is the number? '))
+    if number > int(desired_range[1]) or number < int(desired_range[0]):
+        return answer_false
+    else:
+        return answer_true
