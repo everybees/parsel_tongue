@@ -8,6 +8,7 @@ def sum_of_numbers(list_):
     print(sum(list_))
 
 
+# Question 3
 def multiple_of_numbers(list):
     multiple = 1
     for i in list:
