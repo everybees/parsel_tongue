@@ -106,10 +106,10 @@ def find_prime_number():
                 list_of = [number for number in range(2, user_number) if user_number % number == 0]
                 if len(list_of) > 1:
                     return answer_false
-                else:
+                elif len(list_of) == 1:
                     return answer_true
 
 
 def print_even_number_from_a_list():
-    list_of_numbers = input().split()
-    return [number for number in list_of_numbers if int(number) % 2 == 0]
+    list_of_numbers = input('Enter list of integers only separated by whitespace').split()
+    return [int(number) for number in list_of_numbers if int(number) % 2 == 0]
