@@ -59,3 +59,26 @@ def check_number_within_a_range():
         return answer_false
     else:
         return answer_true
+
+
+def check_upper_and_lowercase_in_sentence():
+    input_value = input('Enter string value here: ')
+    count_small = 0
+    count_big = 0
+
+    for character in input_value:
+        if character.islower():
+            count_small += 1
+        elif character.isupper():
+            count_big += 1
+    value = f'The no of small letters is {count_small}.' \
+            f'\nThe no of big letters is {count_big}'
+    return value
+
+
+def create_a_list_with_unique_elements_of_given_list():
+    given_list = input().split()
+    list2 = []
+    for element in given_list:
+        list2 = [element for element in given_list if given_list.count(element) < 2]
+    return list2

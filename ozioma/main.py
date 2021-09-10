@@ -2,7 +2,7 @@ from ozioma import chat_bot_2, calculator
 from ozioma.function_module import exercises
 
 if __name__ == "__main__":
-    print(exercises.check_number_within_a_range())
+    print(exercises.create_a_list_with_unique_elements_of_given_list())
     # print(exercises.reverse_a_string())
     # print(exercises.factorial_of_a_number())
     # print(exercises.max_of_three_numbers())
