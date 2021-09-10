@@ -16,5 +16,6 @@ def multiple_of_numbers(list):
     print(multiple)
 
 
+# Question 4
 def reverse_string(word):
     print(word[::-1])
