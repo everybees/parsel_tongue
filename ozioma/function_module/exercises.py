@@ -84,32 +84,28 @@ def create_a_list_with_unique_elements_of_given_list():
                  if given_list.count(element) < 2]
     return list2
 
-
 # receive input
 # if input is greater than 1, check if it is divisible by 2
 # if yes, return not a prime number
 # else if number is not divisible by 2, modulo with number
 # if modulo operation gives 0, add the number to a list
-# if list length is greater than two, return false
-# else return true
+    # if list length is greater than two, return false
+    # else return true
 
 
 def find_prime_number():
     user_number = int(input('Enter number: '))
     answer_true = 'Prime number'
     answer_false = 'Not prime number'
-    for number in range(1, user_number):
+    for number in range(2, (user_number+1)):
         if user_number > 1:
             if user_number % 2 == 0:
                 return answer_false
             elif user_number % 2 != 0:
-                list_of = [number for number in range(2, user_number) if user_number % number == 0]
-                if len(list_of) > 1:
+                list_of = [number for number in range(2, (user_number+1)) if user_number % number == 0]
+                if len(list_of) > 2:
                     return answer_false
-                elif len(list_of) == 1:
+                else:
                     return answer_true
-
-
-def print_even_number_from_a_list():
-    list_of_numbers = input('Enter list of integers only separated by whitespace').split()
-    return [int(number) for number in list_of_numbers if int(number) % 2 == 0]
+        else:
+            print('invalid input')
