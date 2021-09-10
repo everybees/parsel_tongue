@@ -8,13 +8,15 @@ if __name__ == "__main__":
     # elif userInput == 2:
     #     chatbot.chatbot()
 
+# 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
+
     # exercise.max_of_three_numbers(4,2,3)
     # exercise.sum_of_numbers((1,2,2))
     # exercise.multiple_of_numbers((1,2,2))
     # exercise.reverse_string("olatoye")
     # exercise.factorial(4)
-    # exercise.number_in_range(3, 5)
+    # exercise.number_in_range(3, 1, 5)
     # exercise.upper_and_lower("OlaToye")
-    exercise.unique_list_item((1, 1, 3, 4, 5, 2, 1, 2))
-    # exercise.prime_number(7)
-    # exercise.even_number_from((1,2,3,4,5,6))
+    # exercise.unique_list_item((1, 1, 3, 4, 5, 2, 1, 2))
+    # exercise.prime_number(5)
+    exercise.even_number_from((1,2,3,4,5,6))
