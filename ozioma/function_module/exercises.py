@@ -12,7 +12,7 @@ def max_of_three_numbers():
 
 
 def add_values():
-    values = input().split()
+    values = input('Enter integers separated by space: ').split()
     total = 0
     for value in values:
         total += int(value)
@@ -20,7 +20,7 @@ def add_values():
 
 
 def sum_of_numbers_in_a_list():
-    list_of_numbers = input().split()
+    list_of_numbers = input('Enter integers separated by space: ').split()
     total = 0
     for number in list_of_numbers:
         total += int(number)
@@ -28,7 +28,7 @@ def sum_of_numbers_in_a_list():
 
 
 def multiply_numbers_in_a_list():
-    numbers_in_a_list = input().split()
+    numbers_in_a_list = input('Enter integers separated by space: ').split()
     total = 1
     for number in numbers_in_a_list:
         total *= int(number)
@@ -36,13 +36,13 @@ def multiply_numbers_in_a_list():
 
 
 def reverse_a_string():
-    string_input = input()
+    string_input = input('Enter a string: ')
     reversed_string = string_input[::-1]
     return reversed_string
 
 
 def factorial_of_a_number():
-    input_value = int(input())
+    input_value = int(input('Enter an integer: '))
     factorial = 1
     while input_value != 0:
         factorial *= input_value
