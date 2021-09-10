@@ -12,3 +12,7 @@ def multiple_of_numbers(list):
     for i in list:
         multiple *= i
     print(multiple)
+
+
+def reverse_string(word):
+    print(word[::-1])
