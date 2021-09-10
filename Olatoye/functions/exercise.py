@@ -52,3 +52,12 @@ def unique_list_item(list_):
         if i not in unique_list:
             unique_list.append(i)
     print(sorted(unique_list))
+
+
+# Question 9
+def prime_number(num):
+    divisors = []
+    for i in range(1, num):
+        if num % i == 0:
+            divisors.append(i)
+    print(f"{num} is a Prime number" if len(divisors) == 1 else f"{num} is not a Prime number")
