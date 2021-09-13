@@ -3,6 +3,15 @@ import math
 
 # Question 1
 def max_of_three_numbers(a, b, c):
+    """
+    Returns the sum of three numbers
+            Parameter:
+                    a (int): An integer
+                    b (int): An integer
+                    c (int): An integer
+            Returns:
+                    sum (int): sum of the three user inputs
+    """
     print(max(a, b, c))
 
 
@@ -57,7 +66,7 @@ def prime_number(num):
     for i in range(1, num):
         if num % i == 0:
             divisors.append(i)
-    print(f"{num} is a Prime number" if len(divisors) == 1 else f"{num} is not a Prime number")
+    print(f"{num} is a Prime number" if len(divisors) == 1 or num == 1 else f"{num} is not a Prime number")
 
 
 # Question 10
@@ -73,3 +82,45 @@ def perfect_number(number):
         if number % i == 0:
             divisors.append(i)
     print(f"{number} is a perfect number" if sum(divisors) == number else f"{number} is not a perfect number")
+
+
+# Question 12
+def palindrome(word):
+    print(f"{word} is a palindrome" if word == word[::-1] else f"{word} is not a palindrome")
+
+
+# Question 13
+# def pascal_triangle
+
+
+# Question 14
+def pangram(sentence):
+    alphabets = "abcdefghijklmnopqrstuvwxyz"
+    for i in alphabets:
+        if i not in sentence:
+            print("Not a pangram")
+            break
+        else:
+            pass
+    print("It is a pangram")
+
+
+# Question 15
+def hyphen_separator(word):
+    print("-".join(sorted(word.split("-"))))
+
+
+# Question 16
+def squared_numbers():
+    list_ = []
+    for i in range(1, 31):
+        if type(math.sqrt(i)) == "int":
+            list.append(i)
+        else:
+            pass
+    print(list_)
+
+
+# Question 20
+# def number_of_unique_local_variables(func_):
+#     print(func_.__code__.co_nlocals)
