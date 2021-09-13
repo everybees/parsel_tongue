@@ -17,6 +17,13 @@ def max_of_three_numbers(a, b, c):
 
 # Question 2
 def sum_of_numbers(list_):
+    """
+    Returns the sum of numbers in a list
+            Parameter:
+                    list_: a list of integers
+            Returns:
+                    sum (int): sum of the numbers in the user's list
+    """
     print(sum(list_))
 
 
