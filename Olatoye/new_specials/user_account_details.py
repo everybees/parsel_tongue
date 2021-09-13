@@ -22,4 +22,4 @@ def enter_user_details():
     print(list_of_users)
 
 
-enter_user_details()
+print(type(2))
