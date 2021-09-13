@@ -8,13 +8,14 @@
 # question_5: why am i still single?
 import datetime
 import random
-from _ast import In
+
 
 array_list = {
 
+        "time": ["The time of day is: ", datetime.datetime.now().time()],
         "love": ["Yes, i love you", "No, I dont love you", "What is love?", "love is wicked"],
         "name": ["precious", "amarachi", "lois", "delight", "daniel", "jahson", "jahzeal", "jada"],
-        "age": [number for number in range(1, 100)],
+        "age old": [number for number in range(1, 100)],
         "relationship": ["i am single", "i am not single", "i am married", "i am not married", "i am engaged",
                          "i am not engaged", "its complicated", "i am confused"],
         "eaten": [" no i have not eaten", "i'm actually starving", "Yes i have eaten"],
@@ -23,23 +24,34 @@ array_list = {
         "friends": ["Yes we can be best buddies", " Yes i would love that too",
                     "No please i'm too busy to have a friend"],
         "gender": ["female", "male", "transgender"],
-        "hate me": ["i dont love you because you ugly", "i dont love you because i love " + random.choice("name"),
+        "hate": ["i dont love you because you ugly", "i dont love you because i love " + random.choice("name"),
                     "i dont love because you're not my best friend"],
-        "nice to meet you": ["the pleasure is all mine", "i dont know you but i hate you already"],
-        "why you still single": ["men are scam", "i found love once and then i lost him to other bitch"],
+        "meet": ["the pleasure is all mine", "i dont know you but i hate you already"],
+        "why": ["men are scam", "i found love once and then i lost him to other bitch"],
+        "country": ["uk", "Nigeria", "USA", "Canada", "Germany", "france", "Ghana", "India"],
         "break": ["seem like this relationship is not working and you want to break up bye it was fun while its lasted"]
     }
 
-print("Hello, my name is ", random.choice(array_list["name"]), ",\nHow may i be of help to you")
-continue_chat_bot = "yes"
-while continue_chat_bot == "yes":
+print("Hello, my name is ", random.choice(array_list["name"]), "How may i be of help to you")
+#continue_chat_bot = "yes"
+#while continue_chat_bot == "yes":
 
-    search = input()
+  #  print("what would you like to know")
+play = True
+while play:
 
-    for keys, value in array_list.items():
-        if keys in search:
-            print(random.choice(value))
+    search = input().split()
 
-    print("what would you like to know")
+    for key in search:
+        if key in array_list.keys():
+            print(random.choice(key))
+            print("Please ask another question")
+            break
+        if "break" in array_list.keys():
+            print(key)
+            break
+    else:
+        print("i dont understand your question Please ask another question")
 
-    continue_chat_bot = input("Enter yes to continue or no to break \n")
+    if not play:
+        break

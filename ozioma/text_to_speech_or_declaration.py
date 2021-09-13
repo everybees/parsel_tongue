@@ -8,9 +8,12 @@
 text = ["zero, one, two, three, four, five, six, seven, eight, nine"]
 numbers = ["0123456789"]
 digits = input("Enter number: ")
-# for digit in range(len()):
-#     for number in numbers:
-#         if digit == number:
-#             print(text[int(number)])
-#         else:
-#             continue
+
+
+
+
+# for number in range(len(numbers)):
+#     for digit in range(len(digits)):
+#
+#         if number == digit:
+#             print(text[number])
