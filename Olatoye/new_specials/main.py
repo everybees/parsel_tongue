@@ -9,6 +9,7 @@ if __name__ == "__main__":
     # elif userInput == 2:
     #     chatbot.chatbot()
 
+    print(exercise.max_of_three_numbers.__doc__)
     # exercise.max_of_three_numbers(4, 2, 3)
     # exercise.sum_of_numbers((1, 2, 2))
     # exercise.multiple_of_numbers((1, 2, 2))
@@ -24,4 +25,4 @@ if __name__ == "__main__":
     # exercise.pangram("The quick brown fox jumps over the lazy dog")
     # exercise.hyphen_separator("green-red-yellow-black-white")
     # exercise.squared_numbers()
-    exercise.number_of_unique_local_variables(pangram("sentence"))
+    # exercise.number_of_unique_local_variables(pangram("sentence"))
