@@ -2,33 +2,43 @@ import math
 
 
 # Question 1
-def max_of_three_numbers(a, b, c):
+def max_of_three_numbers():
     """
-    Returns the sum of three numbers
-            Parameter:
+    Returns the maximum of three numbers
+            Inputs:
                     a (int): An integer
                     b (int): An integer
                     c (int): An integer
             Returns:
-                    sum (int): sum of the three user inputs
+                    maximum of the three user inputs
     """
+    a, b, c = int(input("Enter a")), int(input("Enter b")), int(input("Enter c"))
     print(max(a, b, c))
 
 
 # Question 2
-def sum_of_numbers(list_):
+def sum_of_numbers():
     """
     Returns the sum of numbers in a list
-            Parameter:
-                    list_: a list of integers
+            Input:
+                    list_: a list of integers separated by commas
             Returns:
-                    sum (int): sum of the numbers in the user's list
+                    sum of the numbers in the user's list
     """
+    list_ = [int(num) for num in input("Enter numbers separated by commas: ").split(",")]
     print(sum(list_))
 
 
 # Question 3
-def multiple_of_numbers(list_):
+def multiple_of_numbers():
+    """
+    Returns the multiple of numbers in a list
+            Input:
+                    list_: a list of integers separated by commas
+            Returns:
+                    multiplication of the numbers in the user's list
+    """
+    list_ = [int(num) for num in input("Enter numbers separated by commas: ").split(",")]
     print(math.prod(list_))
 
 
