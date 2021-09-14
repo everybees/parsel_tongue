@@ -1,6 +1,33 @@
-from Olatoye.functions.exercise import pangram
 from Olatoye.new_specials import chatbot, calculator
 from Olatoye.functions import exercise
+
+
+def function_caller():
+    number = input("Enter your question number: ")
+
+    func_dict = {
+        "1": exercise.max_of_three_numbers(),
+        "2": exercise.sum_of_numbers(),
+        "3": exercise.multiple_of_numbers(),
+        "4": exercise.reverse_string(),
+        "5": exercise.factorial(),
+        "6": exercise.number_in_range(),
+        "7": exercise.upper_and_lower(),
+        "8": exercise.unique_list_item(),
+        "9": exercise.prime_number(),
+        "10": exercise.even_number_from(),
+        "11": exercise.perfect_number(),
+        "12": exercise.palindrome(),
+        "15": exercise.hyphen_separator()
+    }
+
+    for keys, values in func_dict:
+        if number in keys:
+            print(values.__doc__)
+            print(values)
+        else:
+            print("Sorry, number not in questions list...")
+
 
 if __name__ == "__main__":
     # userInput = int(input())
@@ -8,21 +35,5 @@ if __name__ == "__main__":
     #     calculator.calculator()
     # elif userInput == 2:
     #     chatbot.chatbot()
+    function_caller()
 
-    print(exercise.max_of_three_numbers.__doc__)
-    # exercise.max_of_three_numbers(4, 2, 3)
-    # exercise.sum_of_numbers((1, 2, 2))
-    # exercise.multiple_of_numbers((1, 2, 2))
-    # exercise.reverse_string("olatoye")
-    # exercise.factorial(4)
-    # exercise.number_in_range(3, 1, 5)
-    # exercise.upper_and_lower("OlaToye")
-    # exercise.unique_list_item((1, 1, 3, 4, 5, 2, 1, 2))
-    # exercise.prime_number(17)
-    # exercise.even_number_from((1, 2, 3, 4, 5, 6))
-    # exercise.perfect_number(6)
-    # exercise.palindrome("madam")
-    # exercise.pangram("The quick brown fox jumps over the lazy dog")
-    # exercise.hyphen_separator("green-red-yellow-black-white")
-    # exercise.squared_numbers()
-    # exercise.number_of_unique_local_variables(pangram("sentence"))
