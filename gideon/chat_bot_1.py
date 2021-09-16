@@ -13,7 +13,7 @@ my_dict = {
 "age": [num for num in range(1,100)],
 "relationship": ["Yes, I am", "I'm not sure", "I thought we were a thing?", "I'm in a relationship with my job", "It depends on who's asking", "You and only you should know"],
 "name": ["My name is Dami", "Why dont you give me a name?", "You can call me anything", "My name is Oshi"],
-"date": ["The beach would be nice", "How about we go sit at the lagoon front?", "The concert at Eko hotels woold be nice", "The movies wont be a bad idea"],
+"date": ["The beach would be nice", "How about we go sit at the lagoon front?", "The concert at Eko hotels would be nice", "The movies wont be a bad idea"],
 "alarm": [num for num in range(1,7)],
 "doing": ["Life hard, no be small", "It's all good. How about you?", "I'm fine, just a little stressed", "I'm great! my day has been productive so far"],
 "job": ["I'm a software engineer", "I'm a robot", "I'm Dangote's niece", "I'm a label exec", "I work at Sabo bustop with Jerry"],
@@ -21,13 +21,14 @@ my_dict = {
 }
 
 while True:
-    question = input().split("_")
+    question = input().split(" ")
+    if ["exit"] == question:
+        print("Seems like you dont want to talk anymore. Bye Now!")
+        break
     for word in question:
         if word in my_dict.keys():
             print(random.choice(my_dict[word]))
-        else:
-            print("I dont understand you. Do you mind asking another question?")
-    if "break" in question:
-        print("Seems you dont want talk anymore. Bye Now!")
-        break
+            break
+    else:
+        print("I dont understand you. Do you mind asking another question?")
             
