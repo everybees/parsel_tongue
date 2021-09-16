@@ -7,24 +7,25 @@ ops = {"+": operator.add,
         "^": operator.xor,
         "%": operator.mod}
 
-first_number = int(input("Enter a number: "))
-signs = input("Enter a sign: ")
-second_number = int(input("Enter a number: "))
 
-if signs in ops.keys():
-    answer = ops[signs](first_number, second_number)
-    print (answer)
-
-while True:
+def calculator():  
+    first_number = int(input("Enter a number: "))
     signs = input("Enter a sign: ")
+    second_number = int(input("Enter a number: "))
     
-    if signs == 'exit':
-       print (answer)
-       break
-    number = int(input("Enter a number: "))
-
     if signs in ops.keys():
-        answer = ops[signs](answer, number)
-    print (answer)
+        answer = ops[signs](first_number, second_number)
+        print (answer)
+
+    while True:
+        signs = input("Enter a sign: ")   
+        if signs == 'exit':
+            print (answer)
+            break
+        number = int(input("Enter a number: "))
+
+        if signs in ops.keys():
+            answer = ops[signs](answer, number)
+            print (answer)
 
 
