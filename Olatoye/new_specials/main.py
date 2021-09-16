@@ -1,4 +1,4 @@
-from Olatoye.new_specials import chatbot, calculator
+# from Olatoye.new_specials import chatbot, calculator
 from Olatoye.functions import exercise
 
 
@@ -21,10 +21,10 @@ def function_caller():
         "15": exercise.hyphen_separator()
     }
 
-    for keys, values in func_dict:
-        if number in keys:
-            print(values.__doc__)
-            print(values)
+    for key, value in func_dict:
+        if number == key:
+            print(f"{key}\n{value.__doc__}")
+            print(value)
         else:
             print("Sorry, number not in questions list...")
 
@@ -36,4 +36,3 @@ if __name__ == "__main__":
     # elif userInput == 2:
     #     chatbot.chatbot()
     function_caller()
-
