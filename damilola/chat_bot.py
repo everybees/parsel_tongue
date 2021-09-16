@@ -18,7 +18,7 @@
 import datetime
 import random
 
-print("This is precious.What question do you want answered today?")
+print("This is candy.What question do you want answered today?")
 
 keyword = {
   "love" : ["Yes,I love you!","No,I dont love you","what is love?","love is wicked"],
@@ -28,14 +28,23 @@ keyword = {
   "damilola" :["I love her","Ever met someone so perfect?", "She hates negativity", "That name is just as perfect as the owner"],
   "bored" : ["play games","go and chill", "you need friends","you have me"],
   "friend" : ["we'll always be friends", "No learn to be independent", "everybody likes you","You are still my friend"],
-  "happy" :["It is a thing of the mind", "Its a good thing to feel but let your feelings not cloud your judgement", "always smile","I'm proud of you"]
+  "happy" :["It is a thing of the mind", "Its a good thing to feel but let your feelings not cloud your judgement", "always smile","I'm proud of you"],
+  "exit": []
+  }
 
-}
 while True:
-  question = input()
-  for word in question.split(" "):
+  question = input().split()
+  if ["exit"] == question:
+      print("Exiting.....")
+      break
+   
+  for word in question:
     if word in keyword.keys():
       print(random.choice(keyword[word]))
       break
+
   else:
-   print("I do not understand this question!!! \n why not ask again")
+      print("Ask another question")
+
+  
+   
