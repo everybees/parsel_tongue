@@ -33,4 +33,4 @@ elif number == 10:
     print("This is a function that determines even numbers in a list")
     print("New list of even number is : ", exercise.even_number_in_list())
 else:
-    print("Invalid number selection.", )
+    print("Invalid number selection.")
