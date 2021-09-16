@@ -14,8 +14,9 @@ elif user_input == 2:
         total = 0
         for number in numbers:
             total = total+ int(number)
-        print(total)
-    add_numbers(input("enter numbers you wish to have added together").replace(',', ''))
+        return total
+    total=add_numbers(input("enter numbers you wish to have added together\n").replace(',', ''))
+    print(total)
 elif user_input == 3:
     print("function takes a word and reverses the word")
     def reverse_string(word):
@@ -30,3 +31,14 @@ elif user_input == 4:
         _list.sort()
         print(_list)
     sort_list(input("enter group of numbers you wish to have sorted").split(','))
+elif  user_input ==5:
+    print("function calculates average of a group of numbers")
+    def average_of_numbers(numbers):
+        total = 0
+        for number in numbers:
+            total = total+ int(number)
+        return total/len(numbers)
+    print("average is", average_of_numbers(input("enter numbers you wish to find the average of\n").replace(',', '')))
+
+    
+
