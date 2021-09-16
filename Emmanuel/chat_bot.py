@@ -17,6 +17,7 @@
 
 import random
 import datetime
+from typing import Optional
 
 print("My name is Precious. what questiion will you have answered today? ")
 
@@ -33,16 +34,38 @@ dictionary = {
     "first_love":  [num for num in range(10,50)],
     "thinking":  ["Thinking of falling in love","Thinking of eating somthing nice","Thinking of you","Thinking about my life"]
 }
+
+
+# while True:
+#     question = input().split(" ")
+#     if "break" in question:
+#         print("Seems you don't want to chat again, Boy bye!")
+#         break
+#     for word in question:
+#      if word in dictionary.keys():
+#         print(random.choice(dictionary[word]))
+#         break    
+#     else:
+#         print("I don't understand you please. Do you mind aksing another question?")
+
 while True:
     question = input().split()
-    for word in question:
-        if word in dictionary.keys():
-            print(random.choice(dictionary[word]))     
-        else:
-            print("I don't understand you please. Do you mind aksing another question?")
-    if "break" in question:
-        print("Seems you want to break up, Boy bye!")
+
+    if ['exit'] == question:
+        print("Existing...")
         break
+
+    Options = []
+
+    for word in question:
+        word = word.lower()
+        if word in dictionary.keys():
+         Options.append(random.choice(dictionary[word]))
+    if Options:
+        print(random.choice(Options))
+    else:
+        print("No match. Kindly ask another question.")
+       
 
 # while True:
 #    
