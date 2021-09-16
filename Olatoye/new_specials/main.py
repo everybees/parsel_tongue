@@ -22,8 +22,8 @@ def function_caller():
     }
 
     for key, value in func_dict:
-        if number == key:
-            print(f"{key}\n{value.__doc__}")
+        if number == func_dict.keys():
+            print(f"{key}\n{func_dict.values().__doc__}")
             print(value)
         else:
             print("Sorry, number not in questions list...")
