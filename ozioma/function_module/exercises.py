@@ -1,7 +1,8 @@
 def max_of_three_numbers():
-    a = int(input())
-    b = int(input())
-    c = int(input())
+    print('Enter three numbers in order to find their maximum.')
+    a = int(input('Enter first number: '))
+    b = int(input('Enter second number: '))
+    c = int(input('Enter third number: '))
 
     if a > b:
         return a
@@ -51,7 +52,7 @@ def factorial_of_a_number():
 
 
 def check_number_within_a_range():
-    desired_range = input('What is the desired range? ').split()
+    desired_range = input('What is the desired range separated by space? ').split()
     answer_false = 'Not in range!'
     answer_true = 'In range!'
     number = int(input('What is the number? '))
@@ -77,7 +78,7 @@ def check_upper_and_lowercase_in_sentence():
 
 
 def create_a_list_with_unique_elements_of_given_list():
-    given_list = input().split()
+    given_list = input('Enter a list of numbers separated by space: ').split()
     list2 = []
     for element in given_list:
         list2 = [element for element in given_list
