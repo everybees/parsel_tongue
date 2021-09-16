@@ -1,13 +1,16 @@
-x_axis = float(input())
-y_axis = float(input())
+X = float(input("X axis: "))
+Y = float(input("Y axis: "))
 
-if x_axis < 0 and y_axis > 0:
-    print("II")
-elif x_axis == 0 and y_axis == 0:
+if X == 0 and Y == 0:
     print("It's the origin")
-elif x_axis > 0 and y_axis > 0:
+elif X > 0 and Y > 0:
     print("I")
-elif x_axis > 0 and y_axis < 0:
+elif X > 0 and Y < 0:
     print("IV")
+elif X < 0 and Y > 0:
+    print("II")
+elif X == 0 or Y == 0:
+    print("One of the coordinate is zero")
 else:
     print("III")
+
