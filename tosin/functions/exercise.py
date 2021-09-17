@@ -26,7 +26,7 @@ def sum_of_numbers_in_a_list():
 #Question 3
 def multiply_numbers_in_list():
     numbers = []
-    product = 0
+    product = 1
     for i in range(5):
         print("Enter value for number ", (i+1))
         digit = int(input())
