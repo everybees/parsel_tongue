@@ -2,7 +2,7 @@ import exercise1
 
 if __name__ == "__main__":
     while True:
-        user_number = int(input("Enter function number: "))
+        user_number = int(input("Enter function number from 1 to 10: "))
         if user_number > 10 or user_number <= 0:
             print("UNKNOWN COMMAND!!")
             print("Exiting main...")
