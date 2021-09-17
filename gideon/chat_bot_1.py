@@ -4,7 +4,6 @@
 import datetime
 import random
 
-print("Hi there! How can I help you today?")
 
 
 my_dict = {
@@ -20,15 +19,16 @@ my_dict = {
 "live": ["I live in Venice", "I live in PH", "I can live in you if you want", "I stay at Funsho Street", "I live in your laptop"]
 }
 
-while True:
-    question = input().split(" ")
-    if ["exit"] == question:
-        print("Seems like you dont want to talk anymore. Bye Now!")
-        break
-    for word in question:
-        if word in my_dict.keys():
-            print(random.choice(my_dict[word]))
+def do_something():
+    print("Hi there! How can I help you today?")
+    while True:
+        question = input().split(" ")
+        if ["exit"] == question:
+            print("Seems like you dont want to talk anymore. Bye Now!")
             break
-    else:
-        print("I dont understand you. Do you mind asking another question?")
-            
+        for word in question:
+            if word in my_dict.keys():
+                print(random.choice(my_dict[word]))
+                break
+        else:
+            print("I dont understand you. Do you mind asking another question?")
