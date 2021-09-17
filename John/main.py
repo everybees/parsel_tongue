@@ -33,4 +33,5 @@ if __name__ == "__main__":
     #     exercise.return_unique_number()
     # elif user_response == 9:
     #     exercise.factorial_of_number()
-    help(math)
+    # help(math)
+    exercise.collect_user_details()
