@@ -26,15 +26,15 @@ def sum_of_numbers_in_a_list():
 #Question 3
 def multiply_numbers_in_list():
     numbers = []
-    total = 0
+    product = 1
     for i in range(5):
         print("Enter value for number ", (i+1))
         digit = int(input())
         numbers.append(digit)
-    total = 1
+    product = 1
     for number in numbers:
-        total *= number
-    return total
+        product *= number
+    return product
 
 #Question 4
 def reverse_string():
@@ -51,7 +51,7 @@ def reverse_string():
 def calculateFactorial():
     a = int(input("Enter a number: "))
     factorial = 1
-    for i in range(1,a+1,):
+    for i in range(1,a+1):
         factorial *= i
     return factorial
 

@@ -1,4 +1,3 @@
-
 import math
 # Question 1
 
@@ -26,8 +25,8 @@ def multiply_numbers_in_a_list():
     numb = int(input("how many numbers do you want to multiply"))
     for item in range(numb):
         numbers = int(input("enter numbers\n"))
-	number.append(numbers)
-    product = math.prod(numbers)
+        number.append(numbers)
+        product = math.prod(numbers)
     print(product)
 
 #     # Question 4
@@ -36,7 +35,8 @@ def reverse_string(x):
     
 #     # Question 5
 
-def factorial(number):     
+def factorial():
+    number =int(input("Enter number"))     
     if number < 0:
         print("Sorry, factorial does not exist for negative numbers")
     elif number == 0:
@@ -57,7 +57,7 @@ def number_fall_in_a_given_range(na):
 
 # Question 7
 def string_counter():
-    str=input("Enter a string: ")
+    str=input("Enter strings: ")
     upper=0
     lower=0
     for i in range(len(str)):
