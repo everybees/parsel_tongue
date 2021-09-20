@@ -1,8 +1,9 @@
 package Estore;
 
 public class BillingInformation {
-    private int receiversPhoneNumber;
-    private String receiversName;
-    private String DeliveryAddress;
+    private String receiverPhoneNumber;
+    private String receiverName;
+    private Address DeliveryAddress;
     private CreditCardInformation creditCardInformation;
+    private Address address;
 }

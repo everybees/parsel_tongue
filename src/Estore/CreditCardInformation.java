@@ -1,11 +1,14 @@
 package Estore;
 
+import java.time.Month;
+import java.time.Year;
+
 public class CreditCardInformation {
     private int cardCvv;
-    private int cardExpirationYear;
-    private int cardExpirationMonth;
+    private Year cardExpirationYear;
+    private Month cardExpirationMonth;
     private String cardName;
-    private int creditCardNumber;
+    private String creditCardNumber;
     private CardType cardType;
 
 }

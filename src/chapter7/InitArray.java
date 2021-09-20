@@ -1,6 +1,6 @@
 package chapter7;
 
-public class Exercise2 {
+public class InitArray {
     public static void main(String[] args) {
         int[] array = {37, 28, 88, 54, 27, 78,};
         System.out.printf("%s%8s%n", "Index", "Value");

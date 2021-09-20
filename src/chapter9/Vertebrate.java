@@ -14,6 +14,6 @@ public class Vertebrate extends Animal{
     }
     public void move() {
         System.out.println("Go placidly");
-        getEyes()
+        getEyes();
     }
 }

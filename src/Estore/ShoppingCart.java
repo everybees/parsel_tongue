@@ -1,5 +1,7 @@
 package Estore;
 
+import java.util.ArrayList;
+
 public class ShoppingCart {
-    private Item items;
+    private ArrayList<Item> items;
 }

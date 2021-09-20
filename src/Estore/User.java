@@ -6,5 +6,5 @@ public class User {
     private  int phoneNumber;
     private String name;
     private String emailAddress;
-    private  Addresse address;
+    private Address address;
 }

@@ -1,6 +1,6 @@
 package Estore;
 
-public class Addresse {
+public class Address {
     private String cityName;
     private String countryName;
     private int houseNumber;
