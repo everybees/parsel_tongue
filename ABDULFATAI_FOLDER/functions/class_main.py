@@ -1,4 +1,4 @@
-# from ABDULFATAI_FOLDER.functions.class_task import Building, Cohort
+from ABDULFATAI_FOLDER.functions.class_task import Building, Cohort
 import class_task
 
 if __name__ == "__main__":
