@@ -30,5 +30,6 @@ if __name__ == '__main__':
     print("-"*54)
 
     for coh in building.cohort:
-        for native in coh.native:
-            print(native.first_name, " |", native.last_name, " |", native.nativeID, " |", native.sex)
+
+       "" for native in coh.native:
+            print(native.nativeID, "   |", native.first_name, "      |", native.last_name, "      |", native.sex)
