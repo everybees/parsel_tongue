@@ -90,7 +90,6 @@ def range():
 
 #write a python function that accepts a string and calculate the number
 #of upper case letters and lower case letter.Sample: 'The quick brow fox'
-
 def count_upper_case_letters(string):
     string = input("Enter a string:")
     count = 0
@@ -126,11 +125,6 @@ def check_prime(n):
     return False
     if n == 2:
         return True
-    for a in range    
+    for a in range:    
 
 
-    ###
-    def unique_list(l):
-        number = []
-        for n in l:
-            if 
