@@ -23,8 +23,9 @@ class Cohort:
 class Building:
     cohort = {}
 
-    def __init__(self, building_name):
+    def __init__(self, building_name, building_address):
         self.building_name = building_name
+        self.building_address = building_address
 
     def __str__(self):
-        return self.building_name + "\n"
+        return self.building_name + "\n" + self.building_address

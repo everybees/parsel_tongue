@@ -31,7 +31,7 @@ def add_cohort():
 
     while number_of_cohort < 3:
         cohort_details = Cohort(cohort_number=input("Enter cohort number"), cohort_name=input("Enter cohort name"))
-        Building.cohort["Cohort {0}".format(cohort_details.cohort_number)] = add_native()
+        Building.cohort[f"COHORT {cohort_details.cohort_number}"] = add_native()
         print("\n\n")
         number_of_cohort += 1
 
@@ -39,15 +39,17 @@ def add_cohort():
 
 
 def add_building():
-    building = Building("Semicolon Africa")
+    building = Building("Semicolon Africa", "312, Herbert Macaulay Way, Sabo-Yaba, Lagos")
     add_cohort()
     print(building.__str__())
     for key in building.cohort.keys():
-        print("==================================================")
+        print("=====================================================")
         print(key)
+        print("SC_ID\t\t|FIRST NAME\t\t|LAST NAME\t\t|GENDER")
+        print("-----------------------------------------------------")
         for value in building.cohort[key]:
             print(value, end="")
-    print("==================================================")
+    print("=========================================================")
 
 
 add_building()
