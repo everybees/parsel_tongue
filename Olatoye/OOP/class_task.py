@@ -28,5 +28,11 @@ class Building:
         self.building_name = building_name
 
     def __str__(self):
-        for key, value in self.cohort:
-            return self.building_name + "\n" + key + "\n" + value
+        keys = ""
+        values = ""
+        for key in self.cohort.keys():
+            keys += key + "\n"
+            for value in self.cohort.values():
+                values += value + "\n"
+
+                return self.building_name + "\n" + keys + "\n" + values

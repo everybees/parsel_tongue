@@ -51,8 +51,7 @@ def add_cohort():
 def add_building():
     building = Building("Semicolon Africa")
     add_cohort()
-    for cohort, native in Building.cohort.items():
-        print(cohort + "\n" + native)
+    print(building.__str__())
 
 
 add_building()
