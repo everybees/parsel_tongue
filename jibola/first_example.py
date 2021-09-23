@@ -1,11 +1,18 @@
 def print_success_message():
     return "success"
+
+
 def print_failure_message():
     return "failed"
+
+
 def print_try_again():
     return "try again"
+
+
 def print_do_better():
     return "you can do better"
+
 
 def create_a_student(first_name, last_name, email, phone_number, sex):
     student = {}
@@ -28,7 +35,7 @@ class Native:
         self.sex = sex
         self.courses = []
         self.next_of_kin = next_of_kin
-    
+
     def __str__(self) -> str:
         return self.first_name + " " + self.last_name
 
@@ -43,12 +50,15 @@ class NextOfKin:
 
     def __str__(self) -> str:
         return self.first_name + " " + self.last_name
-        
+
+
 def create_next_of_kin(first_name, last_name, phone_number, sex, relationship):
     next_of_kin = NextOfKin(first_name, last_name, phone_number, sex, relationship)
     return next_of_kin
 
+
 cohort_eight = []
+
 
 def register_native_to_cohort(first_name, last_name, sex, phone_number, email, next_of_kin):
     native = Native(first_name, last_name, email, phone_number, sex, next_of_kin)
