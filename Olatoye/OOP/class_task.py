@@ -35,4 +35,4 @@ class Building:
             for value in self.cohort.values():
                 values += value + "\n"
 
-                return self.building_name + "\n" + keys + "\n" + values
+        return self.building_name + "\n" + keys + "\n" + values
