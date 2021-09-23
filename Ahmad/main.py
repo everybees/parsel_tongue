@@ -1,40 +1,32 @@
-from functions import exercise
+import Cohort_Class
 if __name__ == "__main__":
-    number = int(input("Enter number between 1-10 to select function: "))
-if number == 1:
-    print("This is a function that determines the maximum number of three different functions.")
-    print("The maximum number is: ", exercise.max_of_three_numbers(321, 908, 543))
-elif number == 2:
-    print("This is a function that gives the sum of numbers in a a list")
-    print("The sum of the numbers in the list are: ", exercise.sum_of_numbers_in_a_list(4, 5, 33, 1123, 6, 7, 9))
-elif number == 3:
-    print("This is a function that performs the multiplication of numbers in a list")
-    print("total is: ", exercise.multiply_numbers_in_a_list(3, 5, 8, 9, 12, 3, 6, 7, 9))
-elif number == 4:
-    print("This is a function that prints the reverse of a word")
-    print("word in reverse is: ", exercise.reverse())
-elif number == 5:
-    print("This is a function that calculates the factorial of a method")
-       print("Factorial is: ", exercise.factorial(9))
-elif number == 6:
-    print("This is a function that checks if a number is within the 100 range")
-    print("Number supplied ", exercise.range_checker(23))
-elif number == 7:
-    print("This is a function that counts the  number of upper and lower case letters in a given text")
-    print("From the text given: ", exercise.case_calculator("NigerIa is Our country. wE sHOUlD fIx It"))
-elif number == 8:
-    print("This is a function that prints the unique elements in a given list")
-    print("Unique elements in the given list are: ", exercise.unique_elements(2, 5, 6, 7, 8, 4, 2, 1, 1, 3, 9, 0))
-elif number == 9:
-    print("This is a function that determines whether a number is a prime number or not")
-    print("Number supplied ", exercise.prime_number())
-elif number == 10:
-    print("This is a function that prints the even numbers present in a list")
-    print("even numbers present in the list are: ", exercise.even_number_in_list(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12))
-else:
-    print("Invalid number selection. Please enter a valid number.")
+    main_building = Cohort_Class.Building("Semicolon Village", "312 Herbert Macaulay, Sabo, Yaba")
+    native_1 = Cohort_Class.Native("01", "Demola", "Big D", "M")
+    native_2 = Cohort_Class.Native("02", "Favour", "Light", "F")
+    cohort_1 = Cohort_Class.Cohort("Cohort One Natives")
+    cohort_1.cohort_natives.append(native_1.__str__())
+    cohort_1.cohort_natives.append(native_2.__str__())
+    main_building.cohorts.append(cohort_1.__str__())
 
+    native_2_1 = Cohort_Class.Native("01", "Tosin", "Beauty", "M")
+    native_2_2 = Cohort_Class.Native("02", "Muqtar", "Crypto", "M")
+    cohort_2 = Cohort_Class.Cohort("Cohort Two Natives")
+    cohort_2.cohort_natives.append(native_2_1.__str__())
+    cohort_2.cohort_natives.append(native_2_2.__str__())
+    main_building.cohorts.append(cohort_2.__str__())
 
+    native_3_1 = Cohort_Class.Native("01", "Teslim", "Teni or Nobody", "F")
+    native_3_2 = Cohort_Class.Native("02", "Ahmad", "Ajala", "M")
+    cohort_3 = Cohort_Class.Cohort("Cohort Three Natives")
+    cohort_3.cohort_natives.append(native_2_1.__str__())
+    cohort_3.cohort_natives.append(native_3_2.__str__())
+    main_building.cohorts.append(cohort_3.__str__())
 
+    native_4_1 = Cohort_Class.Native("01", "Muqtar", "Adetunji", "M")
+    native_4_2 = Cohort_Class.Native("02", "Dami", "Oladimdim", "F")
+    cohort_4 = Cohort_Class.Cohort("Cohort Four Natives")
+    cohort_4.cohort_natives.append(native_4_1.__str__())
+    cohort_4.cohort_natives.append(native_4_2.__str__())
+    main_building.cohorts.append(cohort_4.__str__())
 
-
+    print(main_building)
