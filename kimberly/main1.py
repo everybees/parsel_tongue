@@ -28,7 +28,7 @@ if __name__ == "__main__":
     native3.append(native_2)
     native_3=class_task1.Native("011","tosin","aina","male")
     native3.append(native_3)
-    native_4=class_task1.Native("012","tesleem","abu","male")
+    native_4=class_task1.Native("012","precious","okoro","female")
     native3.append(native_4)
 
     native4=[]
