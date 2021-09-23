@@ -1,14 +1,92 @@
 from ozioma import chat_bot_2, calculator
 from ozioma.function_module import exercises
-from ozioma import building
-if __name__ == "__main__":
+from ozioma import class_task
 
-    semicolon_building = building.Building("Semicolon")
-    native_name = building.Natives("Seyi", "Makinde", "SC1N", "M")
-    cohort_name = building.Cohorts("3")
-    print(semicolon_building)
-    print(native_name)
-    print(cohort_name)
+if __name__ == "__main__":
+    natives_1 = []
+    natives_2 = []
+    natives_3 = []
+
+    native_1 = class_task.Native("Ozi", "Ozo", "SCN01", "F")
+
+    native_2 = class_task.Native("Assi", "Iye", "SCN02", "M")
+
+    native_3 = class_task.Native("Mata", "Joy", "SCN03", "M")
+    natives_1.append(native_1)
+    natives_1.append(native_2)
+    natives_1.append(native_3)
+
+    native_4 = class_task.Native("Seyi", "Ale", "SCN04", "F")
+    native_5 = class_task.Native("Inno", "Alli", "SCN05", "M")
+    native_6 = class_task.Native("Mono", "Bali", "SCN06", "M")
+    natives_2.append(native_4)
+    natives_2.append(native_5)
+    natives_2.append(native_6)
+
+    native_7 = class_task.Native("Esi", "Haru", "SCN07", "F")
+    native_8 = class_task.Native("Sura", "Ipo", "SCN08", "M")
+    native_9 = class_task.Native("Wena", "Yula", "SCN09", "M")
+    natives_3.append(native_7)
+    natives_3.append(native_8)
+    natives_3.append(native_9)
+
+    cohorts = []
+
+    new_cohort_1 = class_task.Cohorts("1", natives_1, "First cohort.")
+    new_cohort_2 = class_task.Cohorts("2", natives_2, "Second cohort.")
+    new_cohort_3 = class_task.Cohorts("3", natives_3, "Third cohort.")
+
+    cohorts.append(new_cohort_1)
+    cohorts.append(new_cohort_2)
+    cohorts.append(new_cohort_3)
+
+    semicolon_building = class_task.Building("Semicolon", cohorts)
+    print(semicolon_building.name)
+
+    for me in semicolon_building.cohorts:
+        if me.cohort_name == "1":
+            print(me.cohort_name + ":")
+            print("SCN  No.|   First name   |   Last name   |    Sex")
+            for native in me.natives:
+                print(native.native_id + "  |    " + native.first_name + "   |    " + native.last_name)
+        elif me.cohort_name == "2":
+            print(me.cohort_name + ":")
+            print("SCN  No.|   First name   |   Last name   |    Sex")
+            for native in me.natives:
+                print(native.native_id + "  |    " + native.first_name + "   |    " + native.last_name)
+        elif me.cohort_name == "3":
+            print(me.cohort_name + ":")
+            print("SCN  No.|   First name   |   Last name   |    Sex")
+            for native in me.natives:
+                print(native.native_id + "  |    " + native.first_name + "   |    " + native.last_name)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # while True:
 #     value = int(input('Enter number between 1 and 11: '))
 #     if value == 1:
