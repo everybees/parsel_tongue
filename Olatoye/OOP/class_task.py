@@ -10,10 +10,11 @@ class Native:
 
 
 class Cohort:
+    natives = []
+
     def __init__(self, cohort_number, cohort_name):
         self.cohort_number = cohort_number
         self.cohort_name = cohort_name
-        self.natives = []
 
     def __str__(self):
         for native in self.natives:
@@ -21,10 +22,11 @@ class Cohort:
 
 
 class Building:
+    cohort = {}
+
     def __init__(self, building_name):
         self.building_name = building_name
-        self.cohorts = {}
 
     def __str__(self):
-        for key, value in self.cohorts:
+        for key, value in self.cohort:
             return self.building_name + "\n" + key + "\n" + value
