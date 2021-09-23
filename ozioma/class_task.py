@@ -28,6 +28,7 @@ class Cohorts:
             raise ValueError("Invalid cohort type.")
         return cohort
 
+
 class Native:
     def __init__(self, first_name, last_name, native_id, sex):
         self.first_name = first_name
