@@ -11,7 +11,6 @@ furniture = {
         "age" : ["from 18years", "To your strength"],
         "duration" : ["Contract", "Full Staff"]
     }
-
 while True:
     question = input().split("_")
     for fun in question:

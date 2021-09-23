@@ -16,28 +16,29 @@ come = ["yes I will be coming around", "Why do u need me arround?", "I will come
 Angry = ["should be angry", "Always happy", "happiness makes you feel good", "I understand it is sad"]
 open = ["It is Open", "Failed to open", "too difficult to open", "I'll get it done", ]
 
-while True:
-    question = input()
-    if "love" in question:
-        print(random.choice(love))
-    elif "age" in question:
-        print(random.choice(age))
-    elif "eat" in question:
-        print(random.choice(eat))
-    elif "relationship" in question:
-        print(random.choice(relationship))
-    elif "felling" in question:
-        print(random.choice(feeling))
-    elif "smart" in question:
-        print(random.choice(Smart))
-    elif "rain" in question:
-        print(random.choice(rain))
-    elif "angry" in question:
-        print(random.choice(Angry))
-    elif "open" in question:
-        print(random.choice(open))
-    elif "come" in question:
-        print(random.choice(come))
-    elif question != input():
-        print("am not sure i got your question")
+def do_something():
+    while True:
+        question = input()
+        if "love" in question:
+            print(random.choice(love))
+        elif "age" in question:
+            print(random.choice(age))
+        elif "eat" in question:
+            print(random.choice(eat))
+        elif "relationship" in question:
+            print(random.choice(relationship))
+        elif "felling" in question:
+            print(random.choice(feeling))
+        elif "smart" in question:
+            print(random.choice(Smart))
+        elif "rain" in question:
+            print(random.choice(rain))
+        elif "angry" in question:
+            print(random.choice(Angry))
+        elif "open" in question:
+            print(random.choice(open))
+        elif "come" in question:
+            print(random.choice(come))
+        elif question != input():
+            print("am not sure i got your question")
     
