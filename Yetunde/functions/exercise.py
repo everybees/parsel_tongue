@@ -7,10 +7,12 @@ def max_of_three_numbers(a, b, c):
 #Quetsion 2
 
 def sum_of_number_in_a_list(list):
+    list = int(input("enter numbers"))
     total = 0
     for i in list:
         total += i
     print (total)
+    return total
 
 # Question 3
 def multiply_numbers():
@@ -43,12 +45,13 @@ def check_range():
         print("number is not in range")
 
 # Question 7
-def test_for_case(s):
+def test_for_case():
     d = {"UPPER_CASE": 0, "LOWER_CASE": 0}
+    s = input("Enter a sentence")
     for i in s:
         if i.isupper():
             d["UPPER_CASE"]+=1
-        elif c.islower():
+        elif i.islower():
             d["LOWER_CASE"]+=1
         else:
             pass
@@ -56,10 +59,11 @@ def test_for_case(s):
         print("Number of upper case characters: ", d["UPPER_CASE"])
         print("Number of lower case characters: ", d["LOWER_CASE"])
 
-# Question 8
-# def unique_list(list):
-#     for number in list:
-
+# question 8
+def unique_list(list):
+    for number in list:
+        return(set(list))
+        
 # Question 9
 def prime_number(n):
     if n == 1:

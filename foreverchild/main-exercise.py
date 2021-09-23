@@ -1,5 +1,5 @@
 
-from functions import exercise
+from foreverchild import exercise
 
 
 if __name__ == "__main__":
