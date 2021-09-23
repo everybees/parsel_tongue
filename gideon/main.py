@@ -91,51 +91,106 @@ if __name__ == "__main__":
     native1 = []
     student1 = class_task.Natives("Yetunde", "Olasehinde", "female", "SCN No1")
     native1.append(student1)
-    student2 = class_task.Natives("John", "Oladeji", "male", "SCN No2")
+    student2 = class_task.Natives("Kareem", "Monsur", "male", "SCN No2")
     native1.append(student2)
+    student3 = class_task.Natives("Lantana", "Tijani", "female", "SCN No3")
+    native1.append(student3)
+    student4 = class_task.Natives("Femi", "Oladeji", "male", "SCN No4")
+    native1.append(student4)
+
 
     native2 = []
-    student3 = class_task.Natives("Emmanuel", "Olorunishola", "male", "SCN No3")
-    native2.append(student3)
-    student4 = class_task.Natives("Ozioma", "Okoroafor", "female", "SCN No4")
-    native2.append(student4)
+    student5 = class_task.Natives("Emmanuel", "Olorunishola", "male", "SCN No1")
+    native2.append(student5)
+    student6 = class_task.Natives("Ozioma", "Okoroafor", "female", "SCN No2")
+    native2.append(student6)
+    student7 = class_task.Natives("Damilola", "Omolori", "female", "SCN No3")
+    native2.append(student7)
+    student8 = class_task.Natives("Pastor-John", "Oladeji", "male", "SCN No4")
+    native2.append(student8)
 
     native3 = []
-    student5 = class_task.Natives("Tife", "Olanipekun", "male", "SCN No5")
-    native3.append(student5)
-    student6 = class_task.Natives("Adesuwa", "Odomela", "female", "SCN No6")
-    native3.append(student6)
+    student9 = class_task.Natives("Tife", "Olanipekun", "male", "SCN No1")
+    native3.append(student9)
+    student10 = class_task.Natives("Adesuwa", "Odomela", "female", "SCN No2")
+    native3.append(student10)
+    student11 = class_task.Natives("Demola", "Adeniyi", "male", "SCN No3")
+    native3.append(student11)
+    student12 = class_task.Natives("Kimberly", "Oketope", "female", "SCN No4")
+    native3.append(student12)
 
     native4 = []
-    student7 = class_task.Natives("Kimberly", "Mojoyin", "female", "SCN No7")
-    native4.append(student7)
-    student8 = class_task.Natives("Olatoye", "Daramola", "male", "SCN No8")
-    native4.append(student8)
+    student13 = class_task.Natives("Goodnews", "Ozichukwu", "female", "SCN No1")
+    native4.append(student13)
+    student14 = class_task.Natives("Olatoye", "Daramola", "male", "SCN No2")
+    native4.append(student14)
+    student15 = class_task.Natives("Precious", "Onyeokwu", "female", "SCN No3")
+    native4.append(student15)
+    student16 = class_task.Natives("Segun", "MacManuel-Acme", "male", "SCN No4")
+    native4.append(student16)
+
 
 
 
     cohorts = []
-    cohort_one = class_task.Cohort("Phoenix", "The Good People", native1)
+    cohort_one = class_task.Cohort("Cohort One", "Phoenix: Na Dem", native1)
     cohorts.append(cohort_one)
-    cohort_two = class_task.Cohort("Sages", "I dont know", native2)
+    cohort_two = class_task.Cohort("Cohort Two", "Sages: Sachet Sense", native2)
     cohorts.append(cohort_two)
-    cohort_three = class_task.Cohort("Hoodlums", "Them just dey", native3)
+    cohort_three = class_task.Cohort("Cohort Three", "Hoodlums: According to their name..", native3)
     cohorts.append(cohort_three)
-    cohort_four = class_task.Cohort("Acme", "Question Sir, primarily..", native4)
+    cohort_four = class_task.Cohort("Cohort Four", "Acme: Question Sir, primarily..", native4)
     cohorts.append(cohort_four)
 
     
-    building = class_task.Building("Building Name: Semicolon Africa", cohorts)
-    print("------------------------------------------------------------------------------")
+    building = class_task.Building("Building Name: Semicolon Village", cohorts)
+    print("=" * 35)
     print(building.building_name)
-    print("------------------------------------------------------------------------------")
+    print("=" * 35)
+    print()
 
 
-    print("SCN No.     |    FIRST NAME         |   LAST NAME         |   SEX")
-    print("------------------------------------------------------------------------------")
+    # print("SCN No.     ||    FIRST NAME         ||   LAST NAME         ||   SEX")
+    # print("=" * 78)
 
     
     for cohort in building.cohorts:
-        for native in cohort.native:
-            print(native.id + "     |        " +native.first_name+ "      |       " +native.last_name + "     |       " + native.sex)
-            print("------------------------------------------------------------------------------")
+        # for native in cohort.native:
+        #     print(native.id + "     |        " +native.first_name + "      |       " +native.last_name + "     |       " + native.sex)
+        #     print("------------------------------------------------------------------------------")
+        
+        if cohort.cohort_name == "Cohort One":
+            print ("Cohort Name:",cohort.cohort_name)
+            print(cohort.cohort_description)
+            print("=" * 78)
+            print("SCN No.     ||    FIRST NAME         ||   LAST NAME         ||   SEX")
+            for native in cohort.native:
+                print(native.id + "     |        " +native.first_name + "      |       " +native.last_name + "     |       " + native.sex)
+                print("------------------------------------------------------------------------------")
+        elif cohort.cohort_name == "Cohort Two":
+            print ("Cohort Name:",cohort.cohort_name)
+            print(cohort.cohort_description)
+            print("=" * 78)
+            print("SCN No.     ||    FIRST NAME         ||   LAST NAME         ||   SEX")
+            print("=" * 78)
+            for native in cohort.native:
+                print(native.id + "     |        " +native.first_name + "      |       " +native.last_name + "     |       " + native.sex)
+                print("------------------------------------------------------------------------------")
+        elif cohort.cohort_name == "Cohort Three":
+            print ("Cohort Name:", cohort.cohort_name)
+            print(cohort.cohort_description)
+            print("=" * 78)
+            print("SCN No.     ||    FIRST NAME         ||   LAST NAME         ||   SEX")
+            print("=" * 78)
+            for native in cohort.native:
+                print(native.id + "     |        " +native.first_name + "      |       " +native.last_name + "     |       " + native.sex)
+                print("------------------------------------------------------------------------------")
+        else:
+            print ("Cohort Name:",cohort.cohort_name)
+            print(cohort.cohort_description)
+            print("=" * 78)
+            print("SCN No.     ||    FIRST NAME         ||   LAST NAME         ||   SEX")
+            print("=" * 78)
+            for native in cohort.native:
+                print(native.id + "     |        " +native.first_name + "      |       " +native.last_name + "     |       " + native.sex)
+                print("------------------------------------------------------------------------------")
