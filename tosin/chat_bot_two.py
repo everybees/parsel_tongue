@@ -12,21 +12,21 @@ response = {
     'days' : ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
     
 }
-print("I'm Muqtar. What question do you want answered today?")
 
 
-
-while True:
-    question = input().split()
-    if ['exit'] == question:
-        print("Exiting...")
-        break
-    options = []
-    for word in question:
-        if word in response.keys():
-            options.append(random.choice(response[word]))
-            #print(random.choice(response[word]))
-    if options:
-        print(random.choice(options))
-    else:
-        print("You said what? please make me understand")
+def do_something():
+    print("I'm Muqtar. What question do you want answered today?")
+    while True:
+        question = input().split()
+        if ['exit'] == question:
+            print("Exiting...")
+            break
+        options = []
+        for word in question:
+            if word in response.keys():
+                options.append(random.choice(response[word]))
+                #print(random.choice(response[word]))
+        if options:
+            print(random.choice(options))
+        else:
+            print("You said what? please make me understand")
