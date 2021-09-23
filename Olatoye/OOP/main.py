@@ -1,6 +1,5 @@
 from class_task import *
 
-
 # Cohort.natives = []
 
 
@@ -51,7 +50,10 @@ def add_cohort():
 def add_building():
     building = Building("Semicolon Africa")
     add_cohort()
-    print(building.__str__())
+    for key in Building.cohort.keys():
+        for value in Building.cohort.values():
+            print(key)
+            print(value)
 
 
 add_building()
