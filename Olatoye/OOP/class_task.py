@@ -6,7 +6,7 @@ class Native:
         self.sc_id = sc_id
 
     def __str__(self):
-        return str(self.sc_id) + " " + self.first_name + " " + self.last_name + " " + self.gender
+        return str(self.sc_id) + "\t\t|" + self.first_name + "\t\t|" + self.last_name + "\t\t|" + self.gender
 
 
 class Cohort:
@@ -18,7 +18,7 @@ class Cohort:
 
     def __str__(self):
         for native in self.natives:
-            return self.cohort_number + " " + self.cohort_name + "\n" + native
+            return self.cohort_number + "\t" + self.cohort_name + "\n" + native
 
 
 class Building:
