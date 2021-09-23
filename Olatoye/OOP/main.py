@@ -1,9 +1,7 @@
 from class_task import *
 
-# Cohort.natives = []
 
-
-global natives
+global natives, cohort_details
 
 
 def register_natives(first_name, last_name, gender, sc_id):
@@ -11,7 +9,6 @@ def register_natives(first_name, last_name, gender, sc_id):
 
     natives = ""
     native = Native(first_name, last_name, gender, sc_id).__str__()
-    # Cohort.natives.append(native)
 
     natives += native + "\n"
 
@@ -25,16 +22,12 @@ def add_native():
                                                                 str(number_of_natives)))
         print("\n")
         number_of_natives += 1
-    # for native in natives:
-    #     print(native)
+
     return natives
 
 
-# Building.cohort = {}
-
-
 def add_cohort():
-    global natives
+    global natives, cohort_details
     number_of_cohort = 1
 
     while number_of_cohort < 3:
@@ -44,16 +37,15 @@ def add_cohort():
         print("\n\n")
         number_of_cohort += 1
 
-    return Building.cohort
+    return cohort_details, Building.cohort
 
 
 def add_building():
     building = Building("Semicolon Africa")
     add_cohort()
-    for key in Building.cohort.keys():
-        for value in Building.cohort.values():
-            print(key)
-            print(value)
+    for key, value in building.cohort.items():
+        print(cohort_details.__str__)
+        print(key + "\n" + value)
 
 
 add_building()
