@@ -201,14 +201,14 @@ def hyphen_separator():
 
 
 # Question 16
-def squared_numbers():
-    list_ = []
-    for i in range(1, 31):
-        if type(math.sqrt(i)) == "int":
-            list.append(i)
-        else:
-            pass
-    print(list_)
+# def squared_numbers():
+#     list_ = []
+#     for i in range(1, 31):
+#         if type(math.sqrt(i)) == "int":
+#             list.append(i)
+#         else:
+#             pass
+#     print(list_)
 
 # Question 20
 # def number_of_unique_local_variables(func_):
