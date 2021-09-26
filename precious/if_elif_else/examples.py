@@ -11,7 +11,5 @@ if len(b) > 4:
                 print(numbs, numb)
     while c > 15:
         for numb in b:
-            print(numb**numb)
-            c-=1
-
-
+            print(numb ** numb)
+            c -= 1

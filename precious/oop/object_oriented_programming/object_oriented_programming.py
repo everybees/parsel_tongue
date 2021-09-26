@@ -27,9 +27,25 @@ class Cohort:
 class Native:
     def __init__(self, sc_id, first_name, last_name, sex):
         self.sc_id = sc_id
-        self.first_name = first_name
-        self.last_name = last_name
-        self.sex = sex
+        self.first_name = self._native_first_name(first_name)
+        self.last_name = self._native_last_name(last_name)
+        self.sex = self._native_sex(sex)
+
+    def _native_first_name(self, first_name):
+        if len(first_name) > 25:
+            raise ValueError("first name can not exceed 25 characters")
+        return first_name
+
+    def _native_last_name(self, last_name):
+        if len(last_name) > 25:
+            raise ValueError("Last Name cannot exceed 25 characters")
+        return last_name
+
+    def _native_sex(self, sex):
+        sex = sex.lower()
+        if sex != "male" and sex != "female":
+            raise ValueError("Sex must be either male or female")
+        return sex
 
     def __str__(self) -> str:
-        return self.sc_id + "\t|" + self.first_name + "\t\t|" + self.last_name + "\t\t|" + self.sex
+        return str(self.sc_id + "\t|" + self.first_name + "\t\t|" + self.last_name + "\t\t|" + self.sex)
