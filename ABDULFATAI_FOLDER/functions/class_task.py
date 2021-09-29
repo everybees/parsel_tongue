@@ -30,13 +30,26 @@ class Cohort(object):
 
 
 class Native(object):
-  def __init__(self, first_name, last_name, sex, native_id):
+    def __init__(self, first_name, last_name, sex, native_id):
         self.first_name = first_name
         self.last_name = last_name
         self.sex = sex
         self.native_id = native_id
 
 
-def __str__(self) -> str:
+    def validate_first_name(self, first_name): 
+        first_name = input("Enter your first name")
+        if len(first_name) > 10:
+            raise ValueError("First name cannot exceed 10 characters")
+        return first_name  
+
+    def validate_last_name(self, last_name):
+        if len(last_name) > 10:  
+            raise ValueError("Last name cannot exceed 10 characters")
+        return last_name             
+
+
+
+    def __str__(self) -> str:
         return self.first_name + " "  + self.last_name
      

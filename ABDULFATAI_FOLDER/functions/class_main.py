@@ -12,9 +12,9 @@ if __name__ == "__main__":
     natives1 = class_task.Native("Jane", "Doe", "F", "SCN01")
     natives1.append(natives1)
     natives2 = class_task.Native("Johnny", "Doe", "M", "SCN02")
-    natives2.append(natives2)
+    natives1.append(natives2)
     natives3 = class_task.Native("James", "Bond", "M", "SCN03")
-    natives3.append(natives3)
+    natives1.append(natives3)
 
     new_cohort = class_task.Cohort("cohort_one", "Short and dark skin", natives1)
     cohorts.append(new_cohort)
