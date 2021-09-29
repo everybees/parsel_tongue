@@ -2,14 +2,14 @@ from functions import exercise
 
 if __name__== "__main__":
     print("""
-            1. Check for maximum number
-            2. Sum of numbers in a list
-            3. Multiple of numbers in a list
-            4. Reverse strings
-            5. Factorial of number
-            6. Number in given range
-            7. String counter
-            8. List unique elements
+        1. Check for maximum number
+        2. Sum of numbers in a list
+        3. Multiple of numbers in a list
+        4. Reverse strings
+        5. Factorial of number
+        6. Number in given range
+        7. String counter
+        8. List unique elements
 """) 
 
 user_input= int(input("Choose which function you wish to make use of:"))

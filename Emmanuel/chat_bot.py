@@ -47,11 +47,14 @@ dictionary = {
 #         break    
 #     else:
 #         print("I don't understand you please. Do you mind aksing another question?")
+#    elif "break"in question:
+#        print("Seems you want to break up, Boy bye!")
+#            
+def do_something():
+    while True:
+     question = input().split()
 
-while True:
-    question = input().split()
-
-    if ['exit'] == question:
+     if ['exit'] == question:
         print("Existing...")
         break
 
@@ -65,24 +68,3 @@ while True:
         print(random.choice(Options))
     else:
         print("No match. Kindly ask another question.")
-       
-
-# while True:
-#    
-#    if "time" in question:
-#        print("The time of the day is:", datetime.datetime.now().time())
-#    elif "name" in question:
-#        print("My name is Precious, How can I help you?")
-#    elif "old" in question or "age" in question:
-#        print("I am", random.choice(age) ,"years old.")    
-#    elif "eat" in question or "eaten" in question:
-#        print(random.choice(eat))
-#    elif "love" in question:
-#        print(random.choice(love))
-#    elif "single" in question or "relationship" in question:
-#        print(random.choice(relationship))
-
-#    elif "break" in question:
-#        print("Seems you want to break up, Boy bye!")
-#            
-
