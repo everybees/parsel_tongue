@@ -12,8 +12,10 @@ universities = {"Harvard": ["GRE is Required for Nigerians", "TOEFL Is Optional 
                         "GRE required for full funding", "No loud Music on campus"],
                 "Stanford": ["No Chance of Getting admitted", "We located In the Bay area", "No application fee",
                              "We only accept Californians", "Stanford is the best university in the world", ]}
-while True:
-    question = input()
-    for uni in universities:
-        if uni in question:
-            print(random.choice(universities[uni]))
+def grad_school():
+        while True:
+    
+                question = input()
+        for uni in universities:
+                if uni in question:
+                        print(random.choice(universities[uni])
