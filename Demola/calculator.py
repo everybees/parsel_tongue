@@ -19,14 +19,15 @@ operations = {
 if sign in operations.keys():
     answer = operations[sign](first_number, second_number)
     print(answer)
+def calculate():
+            while True:
+                sign = input("Enter Operator: ")
+            if sign == "exit":
+                print("Calculator Exiting.......")
+                print(answer)
+                break
 
-    while True:
-        sign = input("Enter Operator: ")
-        if sign == "exit":
-            print("Calculator Exiting.......")
-            print(answer)
-            break
-        number = float(input("Input Number: "))
-        if sign in operations.keys():
-            answer = operations[sign](answer, number)
-            print(answer)
+            number = float(input("Input Number: "))
+            if sign in operations.keys():
+                answer = operations[sign](answer, number)
+                print(answer)
