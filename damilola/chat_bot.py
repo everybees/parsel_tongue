@@ -31,20 +31,20 @@ keyword = {
   "happy" :["It is a thing of the mind", "Its a good thing to feel but let your feelings not cloud your judgement", "always smile","I'm proud of you"],
   "exit": []
   }
+def do_something():
+  while True:
+    question = input().split()
+    if ["exit"] == question:
+        print("Exiting.....")
+        break
+    
+    for word in question:
+      if word in keyword.keys():
+        print(random.choice(keyword[word]))
+        break
+                         
+    else:
+        print("Ask another question")
 
-while True:
-  question = input().split()
-  if ["exit"] == question:
-      print("Exiting.....")
-      break
-   
-  for word in question:
-    if word in keyword.keys():
-      print(random.choice(keyword[word]))
-      break
-
-  else:
-      print("Ask another question")
-
-  
-   
+    
+    
