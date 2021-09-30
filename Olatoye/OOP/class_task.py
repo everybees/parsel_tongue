@@ -39,7 +39,7 @@ class Native:
     #     return str(self.sc_id) + "\t\t|" + self.first_name + "\t\t|" + self.last_name + "\t\t|" + self.gender
 
     def __str__(self):
-        return self.first_name, self.last_name + self.gender+ self.sc_id
+        return self.first_name, self.last_name + self.gender + self.sc_id
 
 
 class Cohort:
@@ -50,12 +50,7 @@ class Cohort:
         self.cohort_name = cohort_name
 
     def __str__(self):
-        native_key = ""
-        native_value = ""
-        for value, key in self.natives_dict.items():
-            native_key += key
-            native_value += value
-        return self.cohort_number + "\t" + self.cohort_name + "\n" + native_key + "\n" + native_value
+        return self.cohort_number + "\t" + self.cohort_name + "\n"
 
 
 class Building:
@@ -66,9 +61,5 @@ class Building:
         self.building_address = building_address
 
     def __str__(self):
-        cohort_key = ""
-        cohort_value = ""
-        for value, key in self.cohort_dict.items():
-            cohort_key += key
-            cohort_value += value
-        return self.building_name + "\n" + self.building_address + "\n" + cohort_key + "\n" + cohort_value
+        return self.building_name + "\n" + self.building_address + "\n"
+
