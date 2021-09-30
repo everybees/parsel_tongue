@@ -17,21 +17,15 @@ class Cohort:
         self.cohort_name = cohort_name
 
     def __str__(self):
-        for native in self.natives:
-            return self.cohort_number + "\t" + self.cohort_name + "\n" + native
+        return self.cohort_number + "\t" + self.cohort_name
 
 
 class Building:
     cohort = {}
 
-    def __init__(self, building_name):
+    def __init__(self, building_name, building_address):
         self.building_name = building_name
+        self.building_address = building_address
 
     def __str__(self):
-        # details = ""
-        # for key in self.cohort.keys():
-        #     for value in self.cohort.values():
-        #         details += key + "\n" + value + "\n"
-
-        # return self.building_name + "\n" + details
-        return self.building_name + "\n"
+        return self.building_name + "\n" + self.building_address
