@@ -7,7 +7,7 @@ def create_cohort():
         cohort_name = input("Enter cohort name\n")
         cohort_desc = input("Enter cohort description\n")
         new_cohort = class_task.Cohort(cohort_name, cohort_desc)
-        building.cohorts.append(new_cohort)
+        return new_cohort
     
 
 def create_native():
@@ -18,7 +18,7 @@ def create_native():
         sex = input("Enter native gender\n")
         native_id= input("Enter native id\n")
         new_native = class_task.Native(first_name, last_name, sex, native_id)
-        building.cohorts.add_native_to_cohort(new_native)
+        return new_native
 
 def display_building():
     for cohort in building.cohorts:
@@ -41,12 +41,15 @@ if __name__=="__main__":
         """))
   
         if response == 1:
-            create_cohort()
+            cohort = create_cohort()
+            building.add_cohorts_to_building(cohort)
             response=input("create natives?")   
             if response=="yes":
-                create_native() 
+                native=create_native()
+                cohort.add_native_to_cohort(native) 
             else:
-                display_building()   
+                display_building() 
+            display_building()  
         elif response == 2:
             create_native()
     display_building()
