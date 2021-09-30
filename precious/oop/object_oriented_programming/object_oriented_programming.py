@@ -10,16 +10,18 @@ class Building:
             cohorts += cohort + "\n"
         return self.building_name + "\n" + self.address + "\n\n" + cohorts
 
+
 class Cohort:
-    def __init__(self, cohort_name):
+    def __init__(self, cohort_name, cohort_number):
         self.cohort_name = cohort_name
+        self.cohort_number = cohort_number
         self.cohort_natives = []
 
     def __str__(self) -> str:
         natives = ""
         for native in self.cohort_natives:
             natives += native + "\n"
-        return self.cohort_name + "\n\n" + "SCN No. | First Name    | Last Name     | Sex" + "\n" + \
+        return self.cohort_name + self.cohort_number + "\n\n" + "SCN No. | First Name    | Last Name     | Sex" + "\n" + \
                "----------------------------------------------" + " \n" + natives
 
 
