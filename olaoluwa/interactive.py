@@ -1,6 +1,6 @@
 class Building:
     def __init__(self, building_name, address):
-        self.building_name = building_name
+        self.Building = building_name
         self.address = address
         self.cohorts = []
 
@@ -8,7 +8,7 @@ class Building:
         cohorts = ""
         for cohort in self.cohorts:
             cohorts += cohort + "\n"
-        return self.building_name + "\n" + self.address + "\n" + cohorts
+        return self.Building + "\n" + self.address + "\n" + cohorts
 
 
 class Cohort:
