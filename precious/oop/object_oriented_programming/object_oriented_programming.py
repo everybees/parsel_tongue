@@ -1,28 +1,44 @@
 class Building:
+    cohorts = {}
+
     def __init__(self, building_name, address):
         self.building_name = building_name
         self.address = address
-        self.cohorts = []
+        # self.cohorts = {}
 
-    def __str__(self) -> str:
-        cohorts = ""
-        for cohort in self.cohorts:
-            cohorts += cohort + "\n"
-        return self.building_name + "\n" + self.address + "\n\n" + cohorts
+    def __str__(self):
+        # cohorts = ""
+        for key in self.cohorts.keys():
+            print(key + "")
+            for value in self.cohorts.values():
+                for item in value:
+                    print(item)
+        return self.building_name + "\n" + self.address + "\n\n", self.cohorts
 
 
 class Cohort:
-    def __init__(self, cohort_name, cohort_number):
-        self.cohort_name = cohort_name
-        self.cohort_number = cohort_number
-        self.cohort_natives = []
+    cohort_natives = []
 
-    def __str__(self) -> str:
-        natives = ""
+    def __init__(self, cohort_name, cohort_number):
+        self.cohort_name = self._cohort_name_(cohort_name)
+        self.cohort_number = self._cohort_number_(cohort_number)
+
+    def _cohort_name_(self, cohort_name):
+        if len(cohort_name) > 15:
+            raise ValueError("cohort name can not exceed 15 characters")
+        return cohort_name
+
+    def _cohort_number_(self, cohort_number):
+        if len(cohort_number) <= 0:
+            raise ValueError("cohort number can not be lesser than 1: ")
+        return cohort_number
+
+    def __str__(self):
+        # natives = ""
         for native in self.cohort_natives:
-            natives += native + "\n"
-        return self.cohort_name + self.cohort_number + "\n\n" + "SCN No. | First Name    | Last Name     | Sex" + "\n" + \
-               "----------------------------------------------" + " \n" + natives
+            print(native + "\n")
+        return (self.cohort_name + "\n\n" + "SCN No. | First Name    | Last Name     | Sex" + "\n" + \
+               "----------------------------------------------" + " \n"), self.cohort_natives
 
 
 class Native:
