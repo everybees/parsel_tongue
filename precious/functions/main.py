@@ -1,3 +1,5 @@
+from precious import dictionary_two
+from precious import calculator
 from functions import exercise
 
 print("\nWelcome to Precious' calculator service ")

@@ -21,13 +21,13 @@
 # num_1 = int(input())
 # num_2 = int(input())
 
-maximum = num_1
-if num_2 > maximum:
-    print(num_2)
-    print(num_1)
-else:
-    print(num_1)
-    print(num_2)
+# maximum = num_1
+# if num_2 > maximum:
+#     print(num_2)
+#     print(num_1)
+# else:
+#     print(num_1)
+#     print(num_2)
 
 # k = int(input())
 # count = 1

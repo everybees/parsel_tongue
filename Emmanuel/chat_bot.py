@@ -17,6 +17,7 @@
 
 import random
 import datetime
+from typing import Optional
 
 print("My name is Precious. what questiion will you have answered today? ")
 
@@ -33,33 +34,37 @@ dictionary = {
     "first_love":  [num for num in range(10,50)],
     "thinking":  ["Thinking of falling in love","Thinking of eating somthing nice","Thinking of you","Thinking about my life"]
 }
-while True:
-    question = input().split()
-    for word in question:
-        if word in dictionary.keys():
-            print(random.choice(dictionary[word]))     
-        else:
-            print("I don't understand you please. Do you mind aksing another question?")
-    if "break" in question:
-        print("Seems you want to break up, Boy bye!")
-        break
+
 
 # while True:
-#    
-#    if "time" in question:
-#        print("The time of the day is:", datetime.datetime.now().time())
-#    elif "name" in question:
-#        print("My name is Precious, How can I help you?")
-#    elif "old" in question or "age" in question:
-#        print("I am", random.choice(age) ,"years old.")    
-#    elif "eat" in question or "eaten" in question:
-#        print(random.choice(eat))
-#    elif "love" in question:
-#        print(random.choice(love))
-#    elif "single" in question or "relationship" in question:
-#        print(random.choice(relationship))
-
-#    elif "break" in question:
+#     question = input().split(" ")
+#     if "break" in question:
+#         print("Seems you don't want to chat again, Boy bye!")
+#         break
+#     for word in question:
+#      if word in dictionary.keys():
+#         print(random.choice(dictionary[word]))
+#         break    
+#     else:
+#         print("I don't understand you please. Do you mind aksing another question?")
+#    elif "break"in question:
 #        print("Seems you want to break up, Boy bye!")
 #            
+def do_something():
+    while True:
+     question = input().split()
 
+     if ['exit'] == question:
+        print("Existing...")
+        break
+
+    Options = []
+
+    for word in question:
+        word = word.lower()
+        if word in dictionary.keys():
+         Options.append(random.choice(dictionary[word]))
+    if Options:
+        print(random.choice(Options))
+    else:
+        print("No match. Kindly ask another question.")

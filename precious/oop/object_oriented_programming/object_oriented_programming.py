@@ -10,7 +10,6 @@ class Building:
             cohorts += cohort + "\n"
         return self.building_name + "\n" + self.address + "\n\n" + cohorts
 
-
 class Cohort:
     def __init__(self, cohort_name):
         self.cohort_name = cohort_name
@@ -48,4 +47,4 @@ class Native:
         return sex
 
     def __str__(self) -> str:
-        return str(self.sc_id + "\t|" + self.first_name + "\t\t|" + self.last_name + "\t\t|" + self.sex)
+        return self.sc_id + "\t\t|" + self.first_name + "\t\t|" + self.last_name + "\t\t|" + self.sex
