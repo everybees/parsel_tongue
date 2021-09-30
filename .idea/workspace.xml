@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c59a163-7f9e-42e7-964b-2334b18f06b9" name="Changes" comment="" />
+    <list default="true" id="5c59a163-7f9e-42e7-964b-2334b18f06b9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/adesuwa/functions/assignment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adesuwa/native.py" beforeDir="false" afterPath="$PROJECT_DIR$/adesuwa/native.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adesuwa/native_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/adesuwa/native_main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +23,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/adesuwa" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -37,6 +42,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -45,7 +51,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="ReaderModeSettings">
     <option name="showLigatures" value="true" />
@@ -57,21 +63,21 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.star_pattern">
-    <configuration name="ascending_number_pattern" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="parsel_tongue" />
+  <component name="RunManager" selected="Python.native_main">
+    <configuration name="fri_exe_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="/usr/bin/python3.8" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/adesuwa" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/adesuwa/ascending_number_pattern.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/adesuwa/fri_exe_main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -80,20 +86,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="decending_number_pattern" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="parsel_tongue" />
+    <configuration name="funct_ass_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/adesuwa" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="SDK_HOME" value="/usr/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/adesuwa/functions" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/adesuwa/decending_number_pattern.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/adesuwa/functions/funct_ass_main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -102,20 +108,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="star_pattern" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="parsel_tongue" />
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="/usr/bin/python3.8" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/adesuwa" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/adesuwa/star_pattern.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/adesuwa/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -124,20 +130,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_to_speech_system" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="parsel_tongue" />
+    <configuration name="mainfun" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/adesuwa" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="SDK_HOME" value="/usr/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/adesuwa/functions" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/adesuwa/test_to_speech_system.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/adesuwa/functions/mainfun.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -146,20 +152,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="vowels" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="parsel_tongue" />
+    <configuration name="native_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="/usr/bin/python3.8" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/adesuwa" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/adesuwa/vowels.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/adesuwa/native_main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -170,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.star_pattern" />
-        <item itemvalue="Python.ascending_number_pattern" />
-        <item itemvalue="Python.decending_number_pattern" />
-        <item itemvalue="Python.vowels" />
-        <item itemvalue="Python.test_to_speech_system" />
+        <item itemvalue="Python.native_main" />
+        <item itemvalue="Python.fri_exe_main" />
+        <item itemvalue="Python.funct_ass_main" />
+        <item itemvalue="Python.mainfun" />
+        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -197,6 +203,18 @@
       <workItem from="1630398812190" duration="1104000" />
       <workItem from="1630405614895" duration="1367000" />
       <workItem from="1630409356105" duration="95000" />
+      <workItem from="1630423327701" duration="23880000" />
+      <workItem from="1630708056799" duration="652000" />
+      <workItem from="1631193985224" duration="17072000" />
+      <workItem from="1631284659884" duration="5146000" />
+      <workItem from="1631780177202" duration="1423000" />
+      <workItem from="1631781975169" duration="20627000" />
+      <workItem from="1631887315752" duration="9381000" />
+      <workItem from="1632008816208" duration="2298000" />
+      <workItem from="1632072854693" duration="2766000" />
+      <workItem from="1632342244362" duration="426000" />
+      <workItem from="1632343075723" duration="6324000" />
+      <workItem from="1632983739680" duration="546000" />
     </task>
     <servers />
   </component>
@@ -215,7 +233,11 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/parsel_tongue$mainfun.coverage" NAME="mainfun Coverage Results" MODIFIED="1631287088255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa/functions" />
     <SUITE FILE_PATH="coverage/parsel_tongue$test_to_speech_system.coverage" NAME="test_to_speech_system Coverage Results" MODIFIED="1629901449058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
     <SUITE FILE_PATH="coverage/parsel_tongue$ascending_number_pattern.coverage" NAME="ascending_number_pattern Coverage Results" MODIFIED="1629908237223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
     <SUITE FILE_PATH="coverage/parsel_tongue$language.coverage" NAME="language Coverage Results" MODIFIED="1629643219201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
@@ -224,22 +246,32 @@
     <SUITE FILE_PATH="coverage/parsel_tongue$leap_year.coverage" NAME="leap_year Coverage Results" MODIFIED="1629297705887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
     <SUITE FILE_PATH="coverage/parsel_tongue$fair_dark.coverage" NAME="fair_dark Coverage Results" MODIFIED="1629320756319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
     <SUITE FILE_PATH="coverage/parsel_tongue$quadrants.coverage" NAME="quadrants Coverage Results" MODIFIED="1629643884091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
+    <SUITE FILE_PATH="coverage/parsel_tongue$chat_bot.coverage" NAME="chat_bot Coverage Results" MODIFIED="1630426938819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
+    <SUITE FILE_PATH="coverage/parsel_tongue$chat_bot2.coverage" NAME="chat_bot2 Coverage Results" MODIFIED="1630513261410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
     <SUITE FILE_PATH="coverage/parsel_tongue$adesua_bee.coverage" NAME="adesua_bee Coverage Results" MODIFIED="1629297752163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
     <SUITE FILE_PATH="coverage/parsel_tongue$amaz.coverage" NAME="amaz Coverage Results" MODIFIED="1629479165312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
+    <SUITE FILE_PATH="coverage/parsel_tongue$calculator_2_main.coverage" NAME="calculator_2_main Coverage Results" MODIFIED="1631200170996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
+    <SUITE FILE_PATH="coverage/parsel_tongue$first_main.coverage" NAME="first_main Coverage Results" MODIFIED="1631805627604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
     <SUITE FILE_PATH="coverage/parsel_tongue$comparisons.coverage" NAME="comparisons Coverage Results" MODIFIED="1629212175763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
+    <SUITE FILE_PATH="coverage/parsel_tongue$main.coverage" NAME="main Coverage Results" MODIFIED="1631265970236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
     <SUITE FILE_PATH="coverage/parsel_tongue$less.coverage" NAME="less Coverage Results" MODIFIED="1629312234326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
     <SUITE FILE_PATH="coverage/parsel_tongue$for_loop.coverage" NAME="for_loop Coverage Results" MODIFIED="1629819252192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
     <SUITE FILE_PATH="coverage/parsel_tongue$else_statement.coverage" NAME="else_statement Coverage Results" MODIFIED="1629297654676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
     <SUITE FILE_PATH="coverage/parsel_tongue$rice_beans.coverage" NAME="rice_beans Coverage Results" MODIFIED="1629321106263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
     <SUITE FILE_PATH="coverage/parsel_tongue$arithmetic_smallest_largest.coverage" NAME="arithmetic_smallest_largest Coverage Results" MODIFIED="1629483716389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
+    <SUITE FILE_PATH="coverage/parsel_tongue$funct_ass_main.coverage" NAME="funct_ass_main Coverage Results" MODIFIED="1631789685555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa/functions" />
+    <SUITE FILE_PATH="coverage/parsel_tongue$chat_box_dict.coverage" NAME="chat_box_dict Coverage Results" MODIFIED="1630494360825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
     <SUITE FILE_PATH="coverage/parsel_tongue$adesuwa_timi.coverage" NAME="adesuwa_timi Coverage Results" MODIFIED="1629204193114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/parsel_tongue$first_example.coverage" NAME="first_example Coverage Results" MODIFIED="1629194857534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/parsel_tongue$turing_test.coverage" NAME="turing_test Coverage Results" MODIFIED="1629312345827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
     <SUITE FILE_PATH="coverage/parsel_tongue$number_checks.coverage" NAME="number_checks Coverage Results" MODIFIED="1629643443924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
     <SUITE FILE_PATH="coverage/parsel_tongue$decending_number_pattern.coverage" NAME="decending_number_pattern Coverage Results" MODIFIED="1629907768950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
     <SUITE FILE_PATH="coverage/parsel_tongue$star_pattern.coverage" NAME="star_pattern Coverage Results" MODIFIED="1629908514613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
+    <SUITE FILE_PATH="coverage/parsel_tongue$native_main.coverage" NAME="native_main Coverage Results" MODIFIED="1632344490739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
+    <SUITE FILE_PATH="coverage/parsel_tongue$fri_exe_main.coverage" NAME="fri_exe_main Coverage Results" MODIFIED="1632342583225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
     <SUITE FILE_PATH="coverage/parsel_tongue$vowels.coverage" NAME="vowels Coverage Results" MODIFIED="1629901621639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
     <SUITE FILE_PATH="coverage/parsel_tongue$shell_soul.coverage" NAME="shell_soul Coverage Results" MODIFIED="1629195657002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/parsel_tongue$assignment_22_aug_weekend.coverage" NAME="Ann_sleep Coverage Results" MODIFIED="1629642690888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
+    <SUITE FILE_PATH="coverage/parsel_tongue$calculator_2.coverage" NAME="calculator_2 Coverage Results" MODIFIED="1630572361873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adesuwa" />
   </component>
 </project>

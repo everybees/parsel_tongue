@@ -1,10 +1,15 @@
 class Building:
     def __init__(self, building_name, cohort):
-        self.building_name = building_name
+        self.building_name = self.__building_name(building_name)
         self.cohort = cohort
 
     def __str__(self) -> str:
-        return self.name
+        return self.building_name
+
+    def __building_name(self, something):
+        if len(something) > 20:
+            raise ValueError("name cannot exceed 20 character")
+        return something
 
 
 class Cohorts:
@@ -14,7 +19,7 @@ class Cohorts:
         self.native = native
 
     def __str__(self) -> str:
-        return self.name + " " + self.description
+        return self.name
 
 
 class Natives:
