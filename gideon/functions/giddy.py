@@ -8,7 +8,7 @@ class Building:
         cohorts = ""
         for cohort in self.cohorts:
             cohorts += cohort +"\n"
-        return self.building_name + "\n" + self.address + "\n\n" + cohorts
+        return "========================"+"\n"+ self.building_name + "\n" +"=========================" + "\n" + self.address + "\n" + "=========================="+ "\n\n" + cohorts
 
 
 class Cohort:
@@ -20,7 +20,7 @@ class Cohort:
         natives = ""
         for native in self.cohort_natives:
             natives += native + "\n"
-        return self.cohort_name + "\n\n" + "SCN No. | First Name    | Last Name     | Sex" + "\n" + "----------------------------------------------" + " \n" +natives
+        return self.cohort_name + "\n\n" + "SCN No. | First Name    | Last Name     | Sex" + "\n" + "==================================================" + " \n" +natives
 
 
 class Native:
