@@ -44,15 +44,18 @@
 #         print("Seems you want to break up, Boy Bye!")
 #         break  
 #     else:
-#         print("I don't understand you. Do you mind asking another question?")                    
+#h         print("I don't understand you. Do you mind asking another question?")                    
 
 import datetime
 import random 
+
+# print("hi, i'm kim, what questions do you have for me today?")
+
 my_first_dictionary = {
     "love":["Yes, I love you!", "No, I don't love you", "What is love?", "Love is wicked!"],
     "age":[num for num in range(1,100)],
     "eat":["No, I haven't.", "Yeah, I have had breakfast.", "No, I am fasting", "Yeah, I had pizza and icecream."],
-    "relationships" :["Wow, even the gods do not know.", "Yes, I am single.", "Yes, I am in a relationship", "It is complicated."],
+    "relationship" :["Wow, even the gods do not know.", "Yes, I am single.", "Yes, I am in a relationship", "It is complicated."],
     "home":["Yes i am.", "No, i'm not" ],
     "visit":["Don't even dare","Disembark from that nonsense capping", "It would be a pleasure"],
     "music":["hiphop is life!","rap is king!", "pop is my fav", "afrobeats for life"],
@@ -61,14 +64,27 @@ my_first_dictionary = {
     
 }
 
-while True:
+def do_something():
+    print("hi, i'm kim, what questions do you have for me today?")
+    while True:
 
-    question = input().split()
-    for key in question:
-        if key in my_first_dictionary.keys():
-            print(random.choice(my_first_dictionary[key]))
+        question = input().split(" ")
+
+        if "exit" in question:
+            print("Goodbye, a'hole")
+            break
+
         else:
-            print("I don't understand you, Do you mind asking another question? ")
-    if "break" in question:
-        print("Seems you want to break up, Boy Bye!")
-        break            
+            if "break" in question:
+                print("Seems you want to break up, Boy Bye!")
+                break            
+
+            for key in question:
+                if key in my_first_dictionary.keys():
+                    print(random.choice(my_first_dictionary[key]))
+                    break
+                else:
+                    print("I don't understand you, Do you mind asking another question? ")
+
+
+do_something()
