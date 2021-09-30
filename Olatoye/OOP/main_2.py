@@ -63,6 +63,7 @@ if __name__ == "__main__":
             for cohort_number in building.keys():
                 print(cohort_number)
                 for cohort in building.values():
+                    print(cohort)
                     for native in cohort.values():
                         print(native)
 
