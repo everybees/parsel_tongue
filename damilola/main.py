@@ -1,33 +1,32 @@
- import dami_cohort
+from dami_cohort import Building
+from dami_cohort import Native
+from dami_cohort import Cohort
+#   dami_cohort
 if __name__ =="__main__":
-   main_building = dami_cohort.Building("Semicolon Village", "312 Herbert Macaulay, Sabo, Yaba")
-   native_1 =dami_cohort.Native("01", "Dimeji", "Tosh", "M")
-   native_2 = dami_cohort.Native("02", "KK", "Neo", "F")
-   cohort_1 = dami_cohort.Cohort("Cohort One Natives")
-   cohort_1.dami_cohort.append(native_1.__str__())
-   cohort_1.cohort_natives.append(native_2.__str__())
-   main_building.cohorts.append(cohort_1.__str__())
+    print("Good day, I am here to make your life better")
+    building_name = input("Enter your Building's name: ")
+    building_address = input("Enter your building's address: ")
+    main_building = Building(building_name, building_address)
+    
+    number_of_cohorts = int(input("How many Cohorts Would You Like to Add: "))
 
-   native_2_1 = dami_cohort.Native("01", "Solomon", "Akpan", "M")
-   native_2_2 = dami_cohort.Native("02", "John", "ajasco", "M")
-   cohort_2 = dami_cohort.Cohort("Cohort Two Natives")
-   cohort_2.cohort_natives.append(native_2_1.__str__())
-   cohort_2.cohort_natives.append(native_2_2.__str__())
-   main_building.cohorts.append(cohort_2.__str__())
+    for n in range(0, number_of_cohorts):
+        cohort_name = input("Enter cohort name: ")
+        cohort = Cohort(cohort_name)
 
-   native_3_1 = dami_cohort.Native("01", "Dami", "Tope or Nobody", "F")
-   native_3_2 = dami_cohort.Native("02", "Gidi", "Udoh", "M")
-   cohort_3 = dami_cohort.Cohort("Cohort Three Natives")
-   cohort_3.cohort_natives.append(native_2_1.__str__())
-   cohort_3.cohort_natives.append(native_3_2.__str__())
-   main_building.cohorts.append(cohort_3.__str__())
+        number_of_natives = int(input("How many natives do you want to admit to this cohort: "))
+        for r in range(0, number_of_natives):
+            native_id = input("Enter natives id: ")
+            native_first_name = input("Enter natives first name: ")
+            native_last_name = input("Enter natives last name: ")
+            native_sex = input("Enter natives gender: ")
 
-   native_4_1 = dami_cohort.Native("01", "Mero", "tunji", "M")
-   native_4_2 = dami_cohort.Native("02", "Dami", "Oladimdim", "F")
-   cohort_4 = dami_cohort.Cohort("Cohort Four Natives")
-   cohort_4.cohort_natives.append(native_4_1.__str__())
-   cohort_4.cohort_natives.append(native_4_2.__str__())
-   main_building.cohorts.append(cohort_4.__str__())
+            native = Native(native_id, native_first_name, native_last_name, native_sex)
 
-   print(main_building)
+            cohort.cohort_natives.append(native.__str__())
+        
+        main_building.cohorts.append(cohort.__str__())
+
+
+    print(main_building)
   
