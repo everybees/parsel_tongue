@@ -1,6 +1,5 @@
 from class_task import *
 
-
 global natives, cohort_details
 
 
@@ -15,10 +14,13 @@ def register_natives(first_name, last_name, gender, sc_id):
 def add_native():
     number_of_natives = 1
     while number_of_natives < 2:
-        register_natives(first_name=input("Enter first name: "), last_name=input("Enter last "
-                                                                                 "name: "),
-                         gender=input("Enter gender: "), sc_id=("sc" + input("Enter cohort: ") +
-                                                                str(number_of_natives)))
+        try:
+            register_natives(first_name=input("Enter first name: "), last_name=input("Enter last "
+                                                                                     "name: "),
+                             gender=input("Enter gender: "), sc_id=("sc" + input("Enter cohort: ") +
+                                                                    str(number_of_natives)))
+        except ValueError:
+            print("Invalid input")
         print("\n")
         number_of_natives += 1
 
