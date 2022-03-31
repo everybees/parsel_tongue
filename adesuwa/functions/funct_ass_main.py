@@ -31,32 +31,33 @@ if __name__ == '__main__':
         """
     ))
     if user_inputs == 1:
-        user_inputs = exercise.max_of_three_numbers()
+        user_inputs = funct_assign.max_of_three_numbers()
     elif user_inputs == 2:
-        user_inputs = exercise.sum_of_list_numbers([1, 2, 3, 4, 5])
+        user_inputs = funct_assign.sum_of_list_numbers([1, 2, 3, 4, 5])
     elif user_inputs == 3:
-        user_inputs = exercise.multiply_all_list_numbers([1, 2, 3, 4, 5])
+        user_inputs = funct_assign.multiply_all_list_numbers([1, 2, 3, 4, 5])
     elif user_inputs == 4:
-        user_inputs = exercise.reverse_a_string()
+        user_inputs = funct_assign.reverse_a_string()
     elif user_inputs == 5:
-        user_inputs = exercise.factorial_of_a_number(6)
+        user_inputs = funct_assign.factorial_of_a_number(6)
     elif user_inputs == 6:
-        user_inputs = exercise.number_in_range(2500)
+        user_inputs = funct_assign.number_in_range(2500)
     elif user_inputs == 7:
-        user_inputs = exercise.numbers_of_lower_and_uppercase("Hello bkb NKB uhln JKHLKBN")
+        user_inputs = funct_assign.numbers_of_lower_and_uppercase("Hello bkb NKB uhln JKHLKBN")
     elif user_inputs == 8:
-        user_inputs = exercise.unique_element([1, 2, 4, 4, 2, 6, 8])
+        user_inputs = funct_assign.unique_element([1, 2, 4, 4, 2, 6, 8])
     elif user_inputs == 9:
-        user_inputs = exercise.prime_number(7)
+        user_inputs = funct_assign.prime_number(7)
     elif user_inputs == 10:
-        user_inputs = exercise.even_number([1, 2, 3, 4, 5, 6, 7, 8])
+        user_inputs = funct_assign.even_number([1, 2, 3, 4, 5, 6, 7, 8])
     elif user_inputs == 11:
-        user_inputs = exercise.perfect_number(28)
+        user_inputs = funct_assign.perfect_number(28)
     elif user_inputs == 12:
-        user_inputs = exercise.string_palindrome("madam")
+        user_inputs = funct_assign.string_palindrome("madam")
     elif user_inputs == 14:
-        user_inputs = exercise.pangram("The quick brown fox jumps over the lazy dog")
+        user_inputs = funct_assign.pangram("The quick brown fox jumps over the lazy dog")
     elif user_inputs == 15:
-        user_inputs = exercise.hyphen_separated_sequence("zulu-foxtrot-delta-tango-echo-bravo")
+        user_inputs = funct_assign.hyphen_separated_sequence("zulu-foxtrot-delta-tango-echo-bravo")
     else:
         print("invalid number")
+
